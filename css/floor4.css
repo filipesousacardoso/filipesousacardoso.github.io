@@ -1,0 +1,106 @@
+.skills{
+	
+	height:100%;
+	
+	background-image:url(../img/background2.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+	
+}
+
+.tablecontainer{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#table {
+	-webkit-transform: rotate(-45deg); 
+    -moz-transform: rotate(-45deg);  
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
+	-o-transform: rotate(-45deg);
+	-webkit-backface-visibility: hidden;
+	
+	display: table;
+	height:350px;
+	width:350px;	
+}
+.row {
+	display: table-row;
+	height:50%;
+}
+
+.cell {
+	width:50%;
+	display: table-cell;
+	vertical-align:middle;
+}
+
+.A,.B,.G,.H {
+    border:20px solid #4452a4;	
+}
+
+.C,.D,.E,.F {
+    border:20px solid #EB5D45;	
+}
+
+.A, .G{
+	background: #EB5D45;
+}
+.C, .E{
+	background:#4452a4;
+}
+
+.cell img{
+	height:80px;
+	
+	-webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg);  
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
+	-o-transform: rotate(45deg);
+}
+
+.cell h2{
+	text-align:left;
+	padding:10%;
+}
+
+.B h2, .F h2{
+	text-align:right;
+}
+
+.H h2, .B h2{
+	-webkit-transform: rotate(90deg); 
+    -moz-transform: rotate(90deg);  
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
+	-o-transform: rotate(90deg);
+}
+
+.B, .D, .F, .H{
+	display: none;
+	background: white;
+}
+
+.A:hover img,.G:hover img{
+	-webkit-transform: rotate(0deg); 
+    -moz-transform: rotate(0deg);  
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
+	-o-transform: rotate(0deg);
+}
+
+
+.C:hover img,.E:hover img{
+	-webkit-transform: rotate(90deg); 
+    -moz-transform: rotate(90deg);  
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
+	-o-transform: rotate(90deg);
+}

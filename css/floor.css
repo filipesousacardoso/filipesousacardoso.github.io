@@ -1,0 +1,30 @@
+.floor-1{
+	background: white;
+}
+
+.floor-2{
+	background:white;
+}
+
+.floor-3{
+	background: #EB5D45;
+}
+	
+.floor-4{
+	background: #4452a4;
+}
+
+.floor-5{
+	background: #EB5D45;
+}
+
+.floor-6{
+	background:url(../img/pena.jpg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+

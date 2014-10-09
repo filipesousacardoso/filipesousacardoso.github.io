@@ -1,0 +1,150 @@
+/* ============================================================
+  RESET - http://meyerweb.com/eric/tools/css/reset/
+============================================================ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ============================================================
+  BOX SIZING & CLEARFIX
+============================================================ */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ============================================================
+  HTML & BODY
+============================================================ */
+body {
+	background-color: white;
+	color: #303030;
+	font-family:sans-serif;
+	font-size: 14px;
+	font-weight:lighter;
+	line-height: 1.5;
+}
+
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+.container {
+  margin: 0 auto;
+  height:100%;
+  right:0px;
+  left:0px;
+  position:absolute;
+  overflow:hidden;
+}
+
+@media only screen and (min-width: 870px) {
+
+.container {
+  right:100px;
+  left:0px;
+  top:0;
+}
+
+}
+
+/* ============================================================
+  TEXT LEVEL SEMANTICS
+============================================================ */
+a {
+  text-decoration: none;
+  color: #0099FF;
+}
+
+a:hover {
+  color: #818181;
+}
+
+/* ============================================================
+  ADD
+============================================================ */
+
+#gradient{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,0.35);
+background: -moz-linear-gradient(top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.9) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.35)), color-stop(100%, rgba(0,0,0,0.9)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.9) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.9) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.9) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.9) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+
+}
+
+#gradient2{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,0.3);
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.3)), color-stop(100%, rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,1) 100%);
+	background: -ms-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
