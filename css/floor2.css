@@ -62,9 +62,9 @@
 	position:absolute;
 	height:100px;
 	bottom:0px;
-	width:430px;
-	margin-left:-215px;
 	left:50%;
+	margin:0 -180px;
+  	width:360px;
 }
 
 .born{
@@ -75,7 +75,7 @@
 	border-radius:50%;
 	position: absolute;
 	top:31px;
-	left:14px;
+	left:4px;
 }
 
 .line{
@@ -84,7 +84,7 @@
 	width: 11px;
 	position: absolute;
 	bottom: 0;
-	left: 24px;
+	left: 14px;
 	border-left:4px solid #EB5D45;
 	border-right:4px solid #EB5D45;
 	border-top:4px solid transparent;

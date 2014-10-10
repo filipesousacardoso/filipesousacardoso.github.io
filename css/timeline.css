@@ -8,8 +8,7 @@ min-width: 1170px
   left:50%;
   margin:0 -180px;
   width:360px;
-  height:100%;
-  
+  //height:100%;
 }
 .cd-container::after {
   /* clearfix */
@@ -59,9 +58,9 @@ Main components
   position: absolute;
   top: 0;
   left: 18px;
-  height: 355px;
+  height: 100%;
   width: 3px;
-  background: white;  
+  background: white;
 }
 
 @media only screen and (min-width: 780px) {
@@ -69,7 +68,7 @@ Main components
   	#cd-timeline::before {
 		left: 50%;
 		margin-left: -1px;
-		height: 295px;
+		height: 100%;
   	}
 }
 
