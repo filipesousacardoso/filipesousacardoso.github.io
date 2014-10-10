@@ -47,7 +47,7 @@ li a:hover{
 	overflow:hidden;
 }
 
-@media only screen and (min-width: 870px) {
+@media only screen and (min-width: 780px) {
 
 .links-to-floor{
 	right:5px;
