@@ -11,7 +11,7 @@ li a {
 	margin-bottom:5px;
 	color: white;
 	background-color:#222222;
-	font-size:1.5vw;
+	font-size:0.8em;
 	display:inline-block;
 }
 
@@ -67,7 +67,6 @@ li a {
 	padding-top:35px;
 	width:80px;
 	height:80px;
-	font-size:0.8em;
 	line-height:10px;
 }
 

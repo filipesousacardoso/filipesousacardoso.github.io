@@ -65,6 +65,7 @@
 	border:10px solid #611c1e;
 	line-height:1;
 	font-weight:bolder;
+	display:none;
 }
 
 .division{
@@ -73,6 +74,18 @@
 	height:10px;
 	width:100%;
 	background:#611c1e;
+	display:none;
+}
+
+@media only screen and (min-height: 240px) {
+
+.scroll {
+	display:block;
+}
+
+.division{
+	display:block;
+}
 }
 
 #instatiles {

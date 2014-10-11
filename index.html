@@ -43,7 +43,7 @@
                 <div id="gradient"></div>
                 <section class="division"></section>               
                 <section class="container">
-                
+                	<section class="scroll">SCROLL</br>⇓</section>
                 	<section class="cover">
                     	<div class="logo">
                     	<img src="img/newlogo.png" alt="Filipe Cardoso" height="150px" />
@@ -56,7 +56,7 @@
                 		</div>
                     </section>
                     
-                    <section class="scroll">SCROLL</br>⇓</section>
+                    
                                         
                     
                 </section>           
@@ -283,7 +283,7 @@
 		
         <nav>
 			<ul class="links-to-floor">
-            	<ln class="navCollapsed  navButton"><img src="img/feed_.png" alt="menu" /></ln>
+            	<li class="navCollapsed  navButton"><img src="img/feed_.png" alt="menu" /></li>
             	<li class="list navButton"><a>Home</a></li>
 				<li class="list navButton"><a>About me</a></li>
                 <li class="list navButton"><a>Path</a></li>
@@ -300,15 +300,15 @@
 			var ascensor = $('#ascensorBuilding').ascensor({direction:"y"});
 			var ascensorInstance = $('#ascensorBuilding').data('ascensor');
 							
-			$(".links-to-floor li").click(function(event, index) {
-				ascensorInstance.scrollToFloor($(this).index()-1);
+			$(".list").click(function(event, index) {
+				ascensorInstance.scrollToFloor($(this).index());
 			});
 
-			$(".links-to-floor li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
+			$(".list:eq("+ ascensor.data("current-floor") +")").addClass("selected");
 
 			ascensor.on("scrollStart", function(event, floor){
-				$(".links-to-floor li").removeClass("selected");
-				$(".links-to-floor li:eq("+floor.to+")").addClass("selected");
+				$(".list").removeClass("selected");
+				$(".list:eq("+floor.to+")").addClass("selected");
 			});
 		</script>
         
