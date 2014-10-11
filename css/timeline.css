@@ -50,7 +50,7 @@ Main components
 -------------------------------- */
 #cd-timeline {
   position: relative; 
-  padding: 2em 0;
+  padding: 5em 0;
 }
 #cd-timeline::before {
   /* this is the vertical line */

@@ -6,7 +6,10 @@
 	-moz-transform: translateX(-50%) translateY(-50%);
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
-	color: white;	
+	color: white;
+	height:120px;
+	width:40%;
+	width:330px;
 }
 
 .logo{
@@ -14,20 +17,24 @@
 	padding-right:5px;
 	float:left;
 	height:100%;
+	width:40%;
 }
 
 .logo img{
-	height:120px;
+	width:100%;
+	height:auto;
 	vertical-align:middle;
 }
 
 .name{
 	display:table-cell;
 	vertical-align:middle;
+	height:auto;
+	width:60%;
 	height:100%;
 
-	padding-top:6px;
-	padding-bottom:6px;
+	padding-top:8px;
+	padding-bottom:8px;
 	float:right;
 }
 

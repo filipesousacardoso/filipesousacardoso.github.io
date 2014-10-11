@@ -41,4 +41,5 @@
 .social_box th img{
 	width:100%;
 	vertical-align:middle;
+	min-width:40px;
 }
