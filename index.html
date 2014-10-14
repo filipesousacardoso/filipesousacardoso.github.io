@@ -317,7 +317,7 @@
 			var ascensorInstance = $('#ascensorBuilding').data('ascensor');
 							
 			$(".list").click(function(event, index) {
-				ascensorInstance.scrollToFloor($(this).index());
+				ascensorInstance.scrollToFloor($(this).index()-1);
 			});
 
 			$(".list:eq("+ ascensor.data("current-floor") +")").addClass("selected");
