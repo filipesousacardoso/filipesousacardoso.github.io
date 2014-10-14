@@ -66,8 +66,19 @@
 
 .socialbox th img{
 	min-width:40px;
-	width:100%;
+	width:99%;
+	height:auto;
 	vertical-align:middle;
+	transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.socialbox th img:hover{
+	border-radius:50%;
+	z-index: 9999;
+	
 }
 
 .init {
