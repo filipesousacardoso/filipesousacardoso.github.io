@@ -23,10 +23,10 @@
 }
 
 #table {
-	//-webkit-transform: rotate(-45deg); 
-   // -moz-transform: rotate(-45deg);  
-   // filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
-	//-o-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg); 
+    -moz-transform: rotate(-45deg);  
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
+	-o-transform: rotate(-45deg);
 	//-webkit-backface-visibility: hidden;
 	display:table;
 	height:350px;
@@ -45,19 +45,34 @@
 	
 }
 
-.A, .G{
-	background: #EB5D45;
+.A, .G,.B,.H,.D .celltop, .D .cellskilllist, .F .celltop, .F .cellskilllist{
+	//background: #EB5D45;
 }
-.C, .E{
-	background:#4452a4;
+.C, .E,.D,.F,.B .celltop, .B .cellskilllist, .H .celltop, .H .cellskilllist{
+	//background: #4452a4;
 }
 
 .A,.B,.G,.H {
-    border:20px solid #4452a4;	
+	padding:15px;
+	background:url(../img/square2.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    //border:20px solid #4452a4;	
 }
 
 .C,.D,.E,.F {
-    border:20px solid #EB5D45;
+	padding:15px;
+	background:url(../img/square1.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .cell img{
@@ -67,19 +82,19 @@
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
 	
-	//-webkit-transform: rotate(45deg); 
-   // -moz-transform: rotate(45deg);  
-   // filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
-	//-o-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg);  
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
+	-o-transform: rotate(45deg);
 }
 
 .cell:hover img{
 	height:100px;
 	
-	//-webkit-transform: rotate(45deg); 
-   // -moz-transform: rotate(45deg);  
-   // filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
-	//-o-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg);  
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
+	-o-transform: rotate(45deg);
 }
 
 .skilltable{
@@ -89,40 +104,71 @@
 	border-spacing:3px;
 }
 
+.B .celltop{
+	border-left:3px solid #4452a4;}	
+	
+.H .celltop{
+	border-right:3px solid #4452a4;}
+	
+.F .celltop{
+	border-left:3px solid #EB5D45;}	
+	
+.D .celltop{
+	border-right:3px solid #EB5D45;}
+	
+.D .celltop, .D .cellskilllist, .F .celltop, .F .cellskilllist{
+	background:#4452a4;}
+.B .celltop, .B .cellskilllist, .H .celltop, .H .cellskilllist{
+	background:#EB5D45;}
+
 .celltop{
 	display:table-cell;
 	width:20px;
 	padding-top:5px;
+	font-size:11px;
 }
 
-.celltop h1{
-	font-size:11px;
+.D .celltop h1, .F .celltop h1{
 	width:20px;
 	-webkit-transform: rotate(90deg); 
     -moz-transform: rotate(90deg);  
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
 	-o-transform: rotate(90deg);
 }
+
+.B .celltop h1, .H .celltop h1{
+	position:absolute;
+	width:20px;
+	-webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg);  
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
+	-o-transform: rotate(-90deg);
+	bottom:25px;
+}
+
 .cellskilllist{
+	font-size:12px;
 	display:table-cell;
 	width:auto;
 	vertical-align:middle;
-	padding:10px;
+	padding:0 10px;
 }
 
-.B .celltop, .B .cellskilllist, .H .celltop, .H .cellskilllist{
-	background:#4452a4;
-}
+.B,.H{
+	-webkit-transform: rotate(90deg); 
+    -moz-transform: rotate(90deg);  
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
+	-o-transform: rotate(90deg);}
 
-.D .celltop, .D .cellskilllist, .F .celltop, .F .cellskilllist{
-	background:#EB5D45;
-}
 
 .B, .D, .F, .H{
 	display: none;
-	//background: white;
 }
 
+.B, .F{
+	text-align:right;
+}
+/*
 .A,.B{
 	border-top:20px solid #EB5D45}
 .C,.D{
@@ -131,18 +177,14 @@
 	border-left:20px solid #4452a4}
 .G,.H{
 	border-bottom:20px solid #EB5D45}
-
-.B,.H{
-	background:#EB5D45;}
-.D,.F{
-	background:#4452a4;}
+*/
 
 .A, .C, .E, .G{
 	vertical-align:middle;
 	text-align: center;
 }
 
-/*.A:hover img,.G:hover img{
+.A:hover img,.G:hover img{
 	-webkit-transform: rotate(0deg); 
     -moz-transform: rotate(0deg);  
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
@@ -155,4 +197,4 @@
     -moz-transform: rotate(90deg);  
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
 	-o-transform: rotate(90deg);
-}*/
+}

@@ -79,10 +79,10 @@ li a {
 }
 
 .selected a{
-	background:#664ac5;
+	background:#4452a4;
 }
 
 .selected a:hover{
 	color: white;
-	background:#664ac5;
+	background:#4452a4;
 }

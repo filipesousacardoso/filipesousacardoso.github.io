@@ -63,7 +63,7 @@
                 </section>           
 			</div>
             
-            <!-- FLOOR 2 
+            <!-- FLOOR 2 -->
 			<div class="floor-2">
             	<section class="division2"></section>
            	  	<section class="container">
@@ -74,7 +74,31 @@
                 	<section class="aboutme">
                     	<section class="toppic"><img src="img/me.jpg" alt="Filipe Cardoso"/></section>
                         <section class="info2">
-                    		<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+                    		<h2>Hi, I'm Filipe Cardoso, born and raised in sunny Lisbon, Portugal.<span class="output">Lorem ipsum dolor</span><span class="output"> sit amet, consectetur</span><span class="output"> adipiscing elit, sed do eiusmod </span><span class="output">tempor incididunt ut labore </span><span class="output">et dolore magna aliqua.</span><span class="output"> Ut enim ad minim veniam,</span><span class="output"> quis nostrud exercitation</span><span class="output"> ullamco laboris nisi ut aliquip ex ea</span><span class="output"> commodo consequat.</span><span class="output"> Duis aute irure dolor in </span><span class="output">reprehenderit in voluptate</span><span class="output"> velit esse cillum dolore eu fugiat</span><span class="output"> nulla pariatur.</span><span class="output"> Excepteur sint occaecat cupidatat non proident,</span><span class="output"> sunt in culpa qui officia</span><span class="output"> deserunt mollit</span><span class="output"> anim id est laborum.</span></h2>
+                            
+                            <!-- 
+                            Design
+                            Fashion
+                            Nature
+                            Tech
+                            Dog
+                            Gym
+                            Health
+                            Cousine
+                            Sports
+                            Football
+                            Sporting
+                            Travel
+                            Beach
+                            Sun
+                            Gadgets
+                            Architecture
+                            
+                            
+                            -->
+                            
+                            
+                            
                     	</section>
                         <section class="socialbox">
                         
@@ -98,11 +122,11 @@
                     </section>
               </div>
             
-            <!-- FLOOR 3 
+            <!-- FLOOR 3 -->
 			<div class="floor-3">
             	<section class="container">          
                 	
-                    <!-- TIMELINE 
+                    <!-- TIMELINE -->
                 	<section id="cd-timeline" class="cd-container">
 						
                         <div class="cd-timeline-block">
@@ -156,7 +180,7 @@
                 <section class="skyline"></section>
 			</div>
             
-            <!-- FLOOR 4 
+            <!-- FLOOR 4 -->
 			<div class="floor-4">
                 <section class="container">
                 	<section class="skills">
@@ -167,9 +191,10 @@
             					<span class="cell A"><img src="img/code.png" alt="Code"></span>
             					<span class="cell B">
                                 	<div class="skilltable">
-                                    <div class="cellskilllist">MS Word</br>
-                                    MS Excel</br>
-                                    MS PowerPoint</div>
+                                    <div class="cellskilllist">MS Office</br>
+                                    Windows</br>
+                                    Chrome</br>
+                                    Firefox</div>
                                     <div class="celltop"><h1>PC</h1></div>
                                     </div>                                	
                                     </span>
@@ -180,7 +205,9 @@
                                     <div class="cellskilllist">Java</br>
                                     HTML</br>
                                     CSS</br>
-                                    Javascript</div>
+                                    Javascript</br>
+                                    PHP</br>
+                                    SQL</div>
                                     </div>
                                     </span>
         					</div>
@@ -189,7 +216,8 @@
            						<span class="cell F">
                                 	<div class="skilltable">
                                     <div class="cellskilllist">Photoshop</br>
-                                    Illustrator</div>
+                                    Illustrator</br>
+                                    Drawing</div>
                                     <div class="celltop"><h1>DESIGN</h1></div>
                                     </div></span>
             					<span class="cell G"><img src="img/design1.png" alt="Design"></span>
@@ -207,7 +235,7 @@
                 </section>
 			</div>
             
-            <!-- FLOOR 5 
+            <!-- FLOOR 5 -->
 			<div class="floor-5">
                 <section class="container">
                 <section class="portfolio">
@@ -259,7 +287,7 @@
                 </section>
 			</div>
             
-            <!-- FLOOR 6 
+            <!-- FLOOR 6 -->
             <div class="floor-6">
             <div id="gradient"></div>
             	<section class="container">
@@ -307,7 +335,7 @@
 				<li class="list navButton"><a>Portfolio</a></li>
 				<li class="list navButton"><a>Contacts</a></li>
 			</ul>
-		</nav>
+		</nav> 
         
 		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 		<script src="js/ascensor.js"></script>
@@ -474,6 +502,32 @@
 				}
 			}
 			}
+		</script>
+        <script>
+		
+		window.addEventListener('load', run, false);
+		document.addEventListener('DOMContentLoaded', run, false);
+
+		var ran = false;
+		var weights = ['lighter', 'bold'];
+
+		function choose(array) {
+    	return array[Math.floor(Math.random() * array.length)];
+			}
+
+		function run() {
+    		if(ran) {
+       		 	return;
+    		}else{
+        		ran = true;
+    		}
+    		var outputs = document.getElementsByClassName('output');
+    		for(var i = 0,l = outputs.length; i < l; i++) {
+        		var output = outputs[i];
+        		output.style.fontWeight = choose(weights);
+			}
+		}
+		
 		</script>
 	</body>
 </html>
