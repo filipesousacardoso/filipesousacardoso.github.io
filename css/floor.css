@@ -1,5 +1,5 @@
 .floor-1{
-	background: white;
+	background:black;
 }
 
 .floor-2{
@@ -7,15 +7,15 @@
 }
 
 .floor-3{
-	background: #EB5D45;
+	background: #00a99d;
 }
 	
 .floor-4{
-	background: #4452a4;
+	background: #247878;
 }
 
 .floor-5{
-	background: #EB5D45;
+	background: #00a99d;
 }
 
 .floor-6{
@@ -26,5 +26,20 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+.division{
+	position:absolute;
+	bottom:0;
+	height:20px;
+	width:100%;
+	display:none;
+}
+
+@media only screen and (min-height: 240px) {
+
+.division{
+	display:block;
+}
 }
 

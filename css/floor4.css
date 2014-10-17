@@ -2,7 +2,7 @@
 	
 	height:100%;
 	
-	background-image:url(../img/background2.png);
+	background-image:url(../img/background.png);
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -46,10 +46,10 @@
 }
 
 .A, .G,.B,.H,.D .celltop, .D .cellskilllist, .F .celltop, .F .cellskilllist{
-	//background: #EB5D45;
+	//background: #00a99d;
 }
 .C, .E,.D,.F,.B .celltop, .B .cellskilllist, .H .celltop, .H .cellskilllist{
-	//background: #4452a4;
+	//background: #247878;
 }
 
 .A,.B,.G,.H {
@@ -61,7 +61,7 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    //border:20px solid #4452a4;	
+    //border:20px solid #247878;	
 }
 
 .C,.D,.E,.F {
@@ -89,7 +89,7 @@
 }
 
 .cell:hover img{
-	height:100px;
+	//height:100px;
 	
 	-webkit-transform: rotate(45deg); 
     -moz-transform: rotate(45deg);  
@@ -105,21 +105,21 @@
 }
 
 .B .celltop{
-	border-left:3px solid #4452a4;}	
+	border-left:3px solid #247878;}	
 	
 .H .celltop{
-	border-right:3px solid #4452a4;}
+	border-right:3px solid #247878;}
 	
 .F .celltop{
-	border-left:3px solid #EB5D45;}	
+	border-left:3px solid #00a99d;}	
 	
 .D .celltop{
-	border-right:3px solid #EB5D45;}
+	border-right:3px solid #00a99d;}
 	
 .D .celltop, .D .cellskilllist, .F .celltop, .F .cellskilllist{
-	background:#4452a4;}
+	background:#247878;}
 .B .celltop, .B .cellskilllist, .H .celltop, .H .cellskilllist{
-	background:#EB5D45;}
+	background:#00a99d;}
 
 .celltop{
 	display:table-cell;
