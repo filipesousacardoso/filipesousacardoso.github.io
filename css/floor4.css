@@ -147,6 +147,7 @@
 }
 
 .cellskilllist{
+	line-height:1.2;
 	font-size:12px;
 	display:table-cell;
 	width:auto;
