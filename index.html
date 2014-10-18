@@ -21,150 +21,13 @@
         <script src="js/modernizr.js"></script>
         
         <script>
-		
-			$(window).resize(function(){
-   				setDisplay();
-   				setTileSize();
-				setNavBar();
-			});
 			
 			$(window).load(function(){
    				setTileSize();
 				setNavBar();
 			});
 			
-        	function setNavBar(){
-				if (window.innerWidth >= 780) {
-					$('.links-to-floor').css('width', '90px');
-					$('.links-to-floor').css('height', 'auto');
-					$('li a').css('width', '80px');
-					$('li a').css('height', '80px');
-					$('.navCollapsed').css('width', '80px');
-					$('.navCollapsed').css('height', '80px');
-					
-				} else {
-					$('.links-to-floor').css('width', (((window.innerHeight-(8*5))/7)+10)+'px');
-					$('li a').css('width', (((window.innerHeight-(8*5))/7))+'px');
-					$('li a').css('height', (((window.innerHeight-(8*5))/7))+'px');
-					$('.navCollapsed').css('width', (((window.innerHeight-(8*5))/7))+'px');
-					$('.navCollapsed').css('height', (((window.innerHeight-(8*5))/7))+'px');
-				}
-			}
-					
-			function setDisplay(){
-				
-				if (window.innerWidth >= 780) {
-					$('.navCollapsed').hide();
-					$('.list').css('display', 'inline-block');
-					
-				} else {					
-					if($('.list').is(':visible') && $('.navCollapsed').is(':visible') ){}
-					else{
-						$('.navCollapsed').css('display', 'inline-block');
-						$('.list').hide();
-					}
-				}				
-			}
-						
-			function setTileSize(){
-				$('.instacell-1').css('width', 'auto');
-				$('.instacell-1').css('display', 'table-cell');
-				$('.instacell-2').css('width', 'auto');
-				$('.instacell-2').css('display', 'table-cell');
-				$('.instacell-3').css('width', 'auto');
-				$('.instacell-3').css('display', 'table-cell');
-				$('.instacell-4').css('width', 'auto');
-				$('.instacell-4').css('display', 'table-cell');
-				$('.instacell-5').css('width', 'auto');
-				$('.instacell-5').css('display', 'table-cell');
-				$('.instacell-6').css('width', 'auto');
-				$('.instacell-6').css('display', 'table-cell');
-				$('.instacell-7').css('width', 'auto');
-				$('.instacell-7').css('display', 'table-cell');
-				$('.instacell-8').css('width', 'auto');
-				$('.instacell-8').css('display', 'table-cell');
-				$('.instacell-9').css('width', 'auto');
-				$('.instacell-9').css('display', 'table-cell');
-				
-				$('.instarow-1').css('height', 'auto');
-				$('.instarow-1').css('display', 'table-row');	
-				$('.instarow-2').css('height', 'auto');
-				$('.instarow-2').css('display', 'table-row');	
-				$('.instarow-3').css('height', 'auto');
-				$('.instarow-3').css('display', 'table-row');	
-			if (window.innerWidth > window.innerHeight) {
-				$('.instacell-1').css('width', (window.innerWidth/3)+'px');
-				$('.instacell-2').css('width', (window.innerWidth/3)+'px');
-				$('.instacell-4').css('width', (window.innerWidth/3)+'px');
-				$('.instacell-5').css('width', (window.innerWidth/3)+'px');
-				$('.instacell-7').css('width', (window.innerWidth/3)+'px');
-				$('.instacell-8').css('width', (window.innerWidth/3)+'px');
-				if(window.innerHeight<=window.innerWidth/3){
-					$('.instarow-2').hide();
-					$('.instarow-3').hide();
-				} else if (window.innerHeight<=(window.innerWidth*2)/3) {
-					$('.instarow-1').css('height', (window.innerWidth/3)+'px');
-					$('.instarow-3').hide();
-				} else {
-					$('.instarow-1').css('height', (window.innerWidth/3)+'px');
-					$('.instarow-2').css('height', (window.innerWidth/3)+'px');		
-				}
-			} else if (window.innerWidth < window.innerHeight){				
-				$('.instarow-1').css('height', window.innerHeight/3+'px');
-				$('.instarow-2').css('height', window.innerHeight/3+'px');
-				if(window.innerWidth<=window.innerHeight/3){
-					$('.instacell-2').hide();
-					$('.instacell-3').hide();
-					$('.instacell-5').hide();
-					$('.instacell-6').hide();
-					$('.instacell-8').hide();
-					$('.instacell-9').hide();
-				} else if (window.innerWidth<=(window.innerHeight*2)/3) {
-					$('.instacell-3').hide();
-					$('.instacell-6').hide();
-					$('.instacell-9').hide();
-					$('.instacell-1').css('width', (window.innerHeight/3)+'px');
-					$('.instacell-4').css('width', (window.innerHeight/3)+'px');
-					$('.instacell-7').css('width', (window.innerHeight/3)+'px');
-				} else {
-					$('.instacell-1').css('width', (window.innerHeight/3)+'px');
-					$('.instacell-2').css('width', (window.innerHeight/3)+'px');
-					$('.instacell-4').css('width', (window.innerHeight/3)+'px');
-					$('.instacell-5').css('width', (window.innerHeight/3)+'px');
-					$('.instacell-7').css('width', (window.innerHeight/3)+'px');
-					$('.instacell-8').css('width', (window.innerHeight/3)+'px');
-				}
-			}
-			}
 		</script>
-        
-       <script>
-		
-		window.addEventListener('load', run, false);
-		document.addEventListener('DOMContentLoaded', run, false);
-
-		var ran = false;
-		var weights = ['lighter', 'bold'];
-
-		function choose(array) {
-    	return array[Math.floor(Math.random() * array.length)];
-			}
-
-		function run() {
-    		if(ran) {
-       		 	return;
-    		}else{
-        		ran = true;
-    		}
-    		var outputs = document.getElementsByClassName('output');
-    		for(var i = 0,l = outputs.length; i < l; i++) {
-        		var output = outputs[i];
-        		output.style.fontWeight = choose(weights);
-			}
-		}
-		
-		</script>
-               
         	
 	</head>
 	<body>
@@ -445,6 +308,119 @@
 		</nav> 
         
         <script>
+		
+			$(window).resize(function(){
+   				setDisplay();
+   				setTileSize();
+				setNavBar();
+			});
+						
+        	function setNavBar(){
+				if (window.innerWidth >= 780) {
+					$('.links-to-floor').css('width', '90px');
+					$('.links-to-floor').css('height', 'auto');
+					$('li a').css('width', '80px');
+					$('li a').css('height', '80px');
+					$('.navCollapsed').css('width', '80px');
+					$('.navCollapsed').css('height', '80px');
+					
+				} else {
+					$('.links-to-floor').css('width', (((window.innerHeight-(8*5))/7)+10)+'px');
+					$('li a').css('width', (((window.innerHeight-(8*5))/7))+'px');
+					$('li a').css('height', (((window.innerHeight-(8*5))/7))+'px');
+					$('.navCollapsed').css('width', (((window.innerHeight-(8*5))/7))+'px');
+					$('.navCollapsed').css('height', (((window.innerHeight-(8*5))/7))+'px');
+				}
+			}
+					
+			function setDisplay(){
+				
+				if (window.innerWidth >= 780) {
+					$('.navCollapsed').hide();
+					$('.list').css('display', 'inline-block');
+					
+				} else {					
+					if($('.list').is(':visible') && $('.navCollapsed').is(':visible') ){}
+					else{
+						$('.navCollapsed').css('display', 'inline-block');
+						$('.list').hide();
+					}
+				}				
+			}
+						
+			function setTileSize(){
+				$('.instacell-1').css('width', 'auto');
+				$('.instacell-1').css('display', 'table-cell');
+				$('.instacell-2').css('width', 'auto');
+				$('.instacell-2').css('display', 'table-cell');
+				$('.instacell-3').css('width', 'auto');
+				$('.instacell-3').css('display', 'table-cell');
+				$('.instacell-4').css('width', 'auto');
+				$('.instacell-4').css('display', 'table-cell');
+				$('.instacell-5').css('width', 'auto');
+				$('.instacell-5').css('display', 'table-cell');
+				$('.instacell-6').css('width', 'auto');
+				$('.instacell-6').css('display', 'table-cell');
+				$('.instacell-7').css('width', 'auto');
+				$('.instacell-7').css('display', 'table-cell');
+				$('.instacell-8').css('width', 'auto');
+				$('.instacell-8').css('display', 'table-cell');
+				$('.instacell-9').css('width', 'auto');
+				$('.instacell-9').css('display', 'table-cell');
+				
+				$('.instarow-1').css('height', 'auto');
+				$('.instarow-1').css('display', 'table-row');	
+				$('.instarow-2').css('height', 'auto');
+				$('.instarow-2').css('display', 'table-row');	
+				$('.instarow-3').css('height', 'auto');
+				$('.instarow-3').css('display', 'table-row');	
+			if (window.innerWidth > window.innerHeight) {
+				$('.instacell-1').css('width', (window.innerWidth/3)+'px');
+				$('.instacell-2').css('width', (window.innerWidth/3)+'px');
+				$('.instacell-4').css('width', (window.innerWidth/3)+'px');
+				$('.instacell-5').css('width', (window.innerWidth/3)+'px');
+				$('.instacell-7').css('width', (window.innerWidth/3)+'px');
+				$('.instacell-8').css('width', (window.innerWidth/3)+'px');
+				if(window.innerHeight<=window.innerWidth/3){
+					$('.instarow-2').hide();
+					$('.instarow-3').hide();
+				} else if (window.innerHeight<=(window.innerWidth*2)/3) {
+					$('.instarow-1').css('height', (window.innerWidth/3)+'px');
+					$('.instarow-3').hide();
+				} else {
+					$('.instarow-1').css('height', (window.innerWidth/3)+'px');
+					$('.instarow-2').css('height', (window.innerWidth/3)+'px');		
+				}
+			} else if (window.innerWidth < window.innerHeight){				
+				$('.instarow-1').css('height', window.innerHeight/3+'px');
+				$('.instarow-2').css('height', window.innerHeight/3+'px');
+				if(window.innerWidth<=window.innerHeight/3){
+					$('.instacell-2').hide();
+					$('.instacell-3').hide();
+					$('.instacell-5').hide();
+					$('.instacell-6').hide();
+					$('.instacell-8').hide();
+					$('.instacell-9').hide();
+				} else if (window.innerWidth<=(window.innerHeight*2)/3) {
+					$('.instacell-3').hide();
+					$('.instacell-6').hide();
+					$('.instacell-9').hide();
+					$('.instacell-1').css('width', (window.innerHeight/3)+'px');
+					$('.instacell-4').css('width', (window.innerHeight/3)+'px');
+					$('.instacell-7').css('width', (window.innerHeight/3)+'px');
+				} else {
+					$('.instacell-1').css('width', (window.innerHeight/3)+'px');
+					$('.instacell-2').css('width', (window.innerHeight/3)+'px');
+					$('.instacell-4').css('width', (window.innerHeight/3)+'px');
+					$('.instacell-5').css('width', (window.innerHeight/3)+'px');
+					$('.instacell-7').css('width', (window.innerHeight/3)+'px');
+					$('.instacell-8').css('width', (window.innerHeight/3)+'px');
+				}
+			}
+			}
+		</script>
+        
+        <script>
 			var ascensor = $('#ascensorBuilding').ascensor({direction:"y"});
 			var ascensorInstance = $('#ascensorBuilding').data('ascensor');
 							
@@ -472,6 +448,33 @@
     				}
 			});
         </script>
+        
+        <script>
+		
+		window.addEventListener('load', run, false);
+		document.addEventListener('DOMContentLoaded', run, false);
+
+		var ran = false;
+		var weights = ['lighter', 'bold'];
+
+		function choose(array) {
+    	return array[Math.floor(Math.random() * array.length)];
+			}
+
+		function run() {
+    		if(ran) {
+       		 	return;
+    		}else{
+        		ran = true;
+    		}
+    		var outputs = document.getElementsByClassName('output');
+    		for(var i = 0,l = outputs.length; i < l; i++) {
+        		var output = outputs[i];
+        		output.style.fontWeight = choose(weights);
+			}
+		}
+		
+		</script>
         
         <script>
         	function showAndHide(trigger, item1, item2) {
