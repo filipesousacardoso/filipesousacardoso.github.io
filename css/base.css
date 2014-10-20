@@ -132,3 +132,20 @@ a:hover {
 	background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.9) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
 }
+
+#underconstruction{
+	position: absolute;
+	color:white;
+	background:red;
+	top: 50px;
+	left:-87px;
+	width:300px;
+	text-align:center;
+-webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.3);
+-moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.3);
+box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.3);
+	
+	-webkit-transform: rotate(-45deg); 
+    -moz-transform: rotate(-45deg);  
+    -o-transform: rotate(-45deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 

@@ -25,9 +25,9 @@
 #table {
 	-webkit-transform: rotate(-45deg); 
     -moz-transform: rotate(-45deg);  
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
-	-o-transform: rotate(-45deg);
-	//-webkit-backface-visibility: hidden;
+    -o-transform: rotate(-45deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
+	
 	display:table;
 	height:350px;
 	width:350px;
@@ -41,34 +41,25 @@
 .cell {
 	width:50%;
 	display: table-cell;
-	vertical-align:middle;
-	
-}
-
-.A, .G,.B,.H,.D .celltop, .D .cellskilllist, .F .celltop, .F .cellskilllist{
-	//background: #00a99d;
-}
-.C, .E,.D,.F,.B .celltop, .B .cellskilllist, .H .celltop, .H .cellskilllist{
-	//background: #247878;
-}
-
-.A,.B,.G,.H {
 	padding:15px;
+}
+
+.A,.B,.G,.H {	
 	background:url(../img/square2.png);
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
+	
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
-    //border:20px solid #247878;	
+	background-size: cover;	
 }
 
-.C,.D,.E,.F {
-	padding:15px;
+.C,.D,.E,.F {	
 	background:url(../img/square1.png);
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
+	
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -77,6 +68,7 @@
 
 .cell img{
 	height:80px;
+	
 	transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -88,21 +80,12 @@
 	-o-transform: rotate(45deg);
 }
 
-.cell:hover img{
-	//height:100px;
-	
-	-webkit-transform: rotate(45deg); 
-    -moz-transform: rotate(45deg);  
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
-	-o-transform: rotate(45deg);
-}
-
 .skilltable{
 	display:table;
 	height:100%;
 	width:100%;
-	border-spacing:3px;
 }
+
 
 .B .celltop{
 	border-left:3px solid #247878;}	
@@ -116,20 +99,23 @@
 .D .celltop{
 	border-right:3px solid #00a99d;}
 	
-.D .celltop, .D .cellskilllist, .F .celltop, .F .cellskilllist{
+.D .skilllist, .F .skilllist{
 	background:#247878;}
-.B .celltop, .B .cellskilllist, .H .celltop, .H .cellskilllist{
+.B .skilllist, .H .skilllist{
 	background:#00a99d;}
 
 .celltop{
 	display:table-cell;
 	width:20px;
-	padding-top:5px;
 	font-size:11px;
 }
 
-.D .celltop h1, .F .celltop h1{
+.celltop h1{
 	width:20px;
+	position:absolute;
+}
+
+.D .celltop h1, .F .celltop h1{	
 	-webkit-transform: rotate(90deg); 
     -moz-transform: rotate(90deg);  
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
@@ -137,14 +123,30 @@
 }
 
 .B .celltop h1, .H .celltop h1{
-	position:absolute;
-	width:20px;
 	-webkit-transform: rotate(-90deg); 
     -moz-transform: rotate(-90deg);  
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
 	-o-transform: rotate(-90deg);
-	bottom:25px;
+
 }
+
+.B .celltop h1{
+	top:25px;
+	right:15px;
+	}
+.H .celltop h1{
+	bottom:25px;
+	left:15px;
+	}
+.D .celltop h1{
+	top:125px;
+	right:140px;
+	}
+.F .celltop h1{
+	bottom:135px;
+	left:140px;
+	}
+
 
 .cellskilllist{
 	line-height:1.2;
@@ -152,7 +154,7 @@
 	display:table-cell;
 	width:auto;
 	vertical-align:middle;
-	padding:0 10px;
+	padding:10px;
 }
 
 .B,.H{
@@ -169,16 +171,6 @@
 .B, .F{
 	text-align:right;
 }
-/*
-.A,.B{
-	border-top:20px solid #EB5D45}
-.C,.D{
-	border-right:20px solid #4452a4}
-.E,.F{
-	border-left:20px solid #4452a4}
-.G,.H{
-	border-bottom:20px solid #EB5D45}
-*/
 
 .A, .C, .E, .G{
 	vertical-align:middle;
