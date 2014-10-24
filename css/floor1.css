@@ -36,7 +36,6 @@
 	height:150px;
 	float:left;
 	width:130px;
-	//border:2px solid white;
 }
 
 .logo img{
@@ -48,7 +47,6 @@
 	display:table-cell;
 	width:200px;
 	float:right;
-	//border:2px solid blue;
 }
 
 .name h1{
@@ -67,7 +65,7 @@
 	position:absolute;
 	bottom:-70px;
 	left:50%;
-	margin-left:-60px;
+	-sand-transform:translateX(-50%);
 	height:120px;
 	width:120px;
 	background:white;

@@ -4,9 +4,7 @@
 	position:relative;
 	top: 10%;
 	left: 50%;
-	-moz-transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
+	-sand-transform: translateX(-50%);
 }
 
 #toppic{
@@ -19,9 +17,7 @@
 	border-radius:50%;
 	position:relative;
 	left: 50%;
-	-moz-transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
+	-sand-transform: translateX(-50%);
 }
 
 #info{
@@ -43,14 +39,7 @@
 
 }
 
-#socialbox table{
-	position:relative;
-	width:80%;
-	left: 50%;
-	-moz-transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
-	
+#socialbox table{		
 	border-spacing:10px;
 	border-collapse:separate;
 	border-bottom:1px solid gray;
@@ -62,6 +51,7 @@
 	width:99%;
 	height:auto;
 	vertical-align:middle;
+	
 	transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -81,9 +71,7 @@
 	
 	bottom:0px;
 	left:50%;
-	-moz-transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
+	-sand-transform: translateX(-50%);
 	
   	display:none;
 }
@@ -105,7 +93,6 @@
 	left: 13px;
 	border-left:5px solid #00a99d;
 	border-right:5px solid #00a99d;
-	//border-top:0.5px solid transparent;
 }
 
 #divisionfloor2{
@@ -121,18 +108,14 @@
 
 #line{
 	left: 50%;
-	-moz-transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
+	-sand-transform: translateX(-50%);
 	overflow:hidden;
 }
 
 #born{
 	position:relative;
 	left: 50%;
-	-moz-transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
+	-sand-transform: translateX(-50%);
 }
 }
 
