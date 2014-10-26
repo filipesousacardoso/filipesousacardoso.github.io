@@ -26,14 +26,8 @@ min-width: 1170px
 	-moz-transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
-	
-	/* IE8+ - must be on one line, unfortunately */
-   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=0, M21=0, M22=1, SizingMethod='auto expand')";
-   
-   /* IE6 and 7 */
-   filter: progid:DXImageTransform.Microsoft.Matrix( M11=1,M12=0,M21=0, M22=1,SizingMethod='auto expand');
-
 }
+
 .cd-container::after {
   /* clearfix */
   	content: '';
@@ -132,7 +126,11 @@ Main components
   height: 30px;
   border-radius: 50%;
   background:white;
+  
+
 }
+
+
 
 .cd-timeline-extend-img {
   position: absolute;
@@ -152,10 +150,20 @@ Main components
   left: 50%;
   top: 50%;
   
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+  
   transform:translateX(-50%) translateY(-50%);
 	-moz-transform:translateX(-50%) translateY(-50%);
 	-webkit-transform:translateX(-50%) translateY(-50%);
 	-o-transform:translateX(-50%) translateY(-50%);
+}
+
+.cd-timeline-img:hover img{
+	width: 23px;
+  	height: 23px;
 }
 
 @media only screen and (min-width: 780px) {

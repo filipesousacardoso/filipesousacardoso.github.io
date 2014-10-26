@@ -18,15 +18,16 @@
 	top: 50%;
 	left: 50%;
 	-moz-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
 
 #table {
-	-webkit-transform: rotate(-45deg); 
+	/*-webkit-transform: rotate(-45deg); 
     -moz-transform: rotate(-45deg);  
     -o-transform: rotate(-45deg);
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); */
 	
 	display:table;
 	height:350px;
@@ -41,29 +42,26 @@
 .cell {
 	width:50%;
 	display: table-cell;
-	padding:15px;
+	//padding:15px;
 }
 
-.A,.B,.G,.H {	
-	background:url(../img/square2.png);
+.A,.B,.G,.H {
+	background:#00a99d;
+	border:15px solid #247878;
+
+	/*background:url(../img/square2.png);
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;	
+	background-size: cover;	*/
 }
 
 .C,.D,.E,.F {	
-	background:url(../img/square1.png);
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background:#247878;
+	border:15px solid #00a99d;
 }
 
 .cell img{
@@ -74,10 +72,10 @@
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
 	
-	-webkit-transform: rotate(45deg); 
+	/*-webkit-transform: rotate(45deg); 
     -moz-transform: rotate(45deg);  
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
-	-o-transform: rotate(45deg);
+	-o-transform: rotate(45deg);*/
 }
 
 .skilltable{
@@ -118,33 +116,35 @@
 .D .celltop h1, .F .celltop h1{	
 	-webkit-transform: rotate(90deg); 
     -moz-transform: rotate(90deg);  
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
 	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
 }
 
 .B .celltop h1, .H .celltop h1{
 	-webkit-transform: rotate(-90deg); 
     -moz-transform: rotate(-90deg);  
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
+    transform: rotate(90deg);
 	-o-transform: rotate(-90deg);
+	 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
 
 }
 
 .B .celltop h1{
-	top:25px;
-	right:15px;
+	top:135px;
+	left:142px;
 	}
 .H .celltop h1{
-	bottom:25px;
-	left:15px;
+	bottom:135px;
+	right:142px;
 	}
 .D .celltop h1{
 	top:125px;
-	right:140px;
+	right:142px;
 	}
 .F .celltop h1{
 	bottom:135px;
-	left:140px;
+	left:142px;
 	}
 
 
@@ -158,10 +158,11 @@
 }
 
 .B,.H{
-	-webkit-transform: rotate(90deg); 
+	/*-webkit-transform: rotate(90deg); 
     -moz-transform: rotate(90deg);  
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
-	-o-transform: rotate(90deg);}
+	-o-transform: rotate(90deg);*/
+}
 
 
 .B, .D, .F, .H{
@@ -175,19 +176,17 @@
 .A, .C, .E, .G{
 	vertical-align:middle;
 	text-align: center;
+	transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 
-.A:hover img,.G:hover img{
-	-webkit-transform: rotate(0deg); 
-    -moz-transform: rotate(0deg);  
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
-	-o-transform: rotate(0deg);
+.A:hover,.G:hover{
+	background:#247878;
 }
 
 
-.C:hover img,.E:hover img{
-	-webkit-transform: rotate(90deg); 
-    -moz-transform: rotate(90deg);  
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
-	-o-transform: rotate(90deg);
+.C:hover,.E:hover{
+	background:#00a99d;
 }
