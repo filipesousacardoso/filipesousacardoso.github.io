@@ -26,6 +26,13 @@ min-width: 1170px
 	-moz-transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
+	
+	/* IE8+ - must be on one line, unfortunately */
+   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=0, M21=0, M22=1, SizingMethod='auto expand')";
+   
+   /* IE6 and 7 */
+   filter: progid:DXImageTransform.Microsoft.Matrix( M11=1,M12=0,M21=0, M22=1,SizingMethod='auto expand');
+
 }
 .cd-container::after {
   /* clearfix */
