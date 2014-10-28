@@ -19,6 +19,8 @@
         <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 		<script src="js/ascensor.js"></script>
         <script src="js/modernizr.js"></script>
+        <script type="text/javascript" src="js/instafeed.js"></script>
+        
         <script>
 			
 			$(window).load(function(){
@@ -26,6 +28,14 @@
 				setNavBar();
 			});
 			
+		</script>
+        <script type="text/javascript">
+   			 var feed = new Instafeed({
+        		get: 'tagged',
+       		 	tagName: 'awesome',
+       		 	clientId: '5a923d1c30ba4b2c8bb703c2949801ea'
+    		});
+   			feed.run();
 		</script>
         	
 	</head>
@@ -258,7 +268,9 @@
                 <section class="container">
                 <section class="portfolio">
                     
-                       <ul class="grid cs-style-3">
+                    <div id="instafeed"></div>                    
+                    
+                       <!--<ul class="grid cs-style-3">
 				<li>
 					<figure>
 						<img src="img/portfolio/triplux.jpg" alt="triplux">
@@ -314,7 +326,7 @@
 						</figcaption>
 					</figure>
 				</li>
-			</ul>
+			</ul>-->
                              
                 </section>
                 </section>
