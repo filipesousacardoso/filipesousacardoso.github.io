@@ -9,12 +9,12 @@
       this.options = {
         target: 'instafeed',
         get: 'popular',
-        resolution: 'standard_resolution',
+        resolution: 'low_resolution',
         sortBy: 'most-recent',
         links: true,
         mock: false,
         useHttp: false,
-		limit: 6
+		limit: 9
       };
       if (typeof params === 'object') {
         for (option in params) {
