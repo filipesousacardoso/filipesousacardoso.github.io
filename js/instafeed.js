@@ -10,11 +10,11 @@
         target: 'instafeed',
         get: 'popular',
         resolution: 'standard_resolution',
-        sortBy: 'none',
+        sortBy: 'most-recent',
         links: true,
         mock: false,
         useHttp: false,
-		limit: 9
+		limit: 6
       };
       if (typeof params === 'object') {
         for (option in params) {
