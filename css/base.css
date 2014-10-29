@@ -137,13 +137,34 @@ a:hover {
 	position: absolute;
 	color:white;
 	background:red;
-	top: 50px;
-	left:-87px;
-	width:300px;
+	top: 0px;
+	left:50%;
+	width:200px;
+	height:20px;
 	text-align:center;
-	
-	transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-webkit-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
+	-moz-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+#underconstruction::before{
+	content:' ';
+	position:absolute;
+	top:0;
+	left:-20px;
+	height:20px;
+	width:20px;
+	background:red;
+	border-bottom-left-radius:100%;
+}
+#underconstruction::after{
+	content:' ';
+	position:absolute;
+	top:0;
+	right:-20px;
+	height:20px;
+	width:20px;
+	background:red;
+	border-bottom-right-radius:100%;
 }
