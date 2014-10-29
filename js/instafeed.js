@@ -174,7 +174,7 @@
             image = images[_k];
 			
 			var instacell=instacells[_k];
-			instacell.style.background="white";	
+			instacell.style.background=image.images[this.options.resolution].url;	
 			
             img = document.createElement('img');
             imageUrl = image.images[this.options.resolution].url;
