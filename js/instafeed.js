@@ -165,8 +165,17 @@
             fragment.appendChild(node);
           }
         } else {
+			
+			console.log("lets see");
+			var instacells = document.getElementsByClassName('instacell');
+			if(instacells!=null){console.log("not null");}
+			
           for (_k = 0, _len2 = images.length; _k < _len2; _k++) {
             image = images[_k];
+			
+			var instacell=instacells[_k];
+			instacell.style.background="white";	
+			
             img = document.createElement('img');
             imageUrl = image.images[this.options.resolution].url;
             if (!this.options.useHttp) {
