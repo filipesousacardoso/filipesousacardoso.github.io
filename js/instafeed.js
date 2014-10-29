@@ -174,7 +174,7 @@
             image = images[_k];
 			
 			var instacell=instacells[_k];
-			instacell.style.backgroundImage="url(../img/pena1.jpg)";
+			instacell.style.backgroundImage="url(http://4.bp.blogspot.com/-BrLngyC1Bto/UpO-IY1kcNI/AAAAAAAALqA/1bSQRy3G_gU/s1600/Image-b%C3%A9b%C3%A9-facebook-8.jpg)";
 			
             img = document.createElement('img');
             imageUrl = image.images[this.options.resolution].url;
