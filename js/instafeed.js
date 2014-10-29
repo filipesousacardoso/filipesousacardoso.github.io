@@ -174,7 +174,7 @@
             image = images[_k];
 			
 			var instacell=instacells[_k];
-			instacell.style.backgroundImage="url(http://www.google.pt/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0CAcQjRw&url=http%3A%2F%2Frockntech.com.br%2Fbizarro-artista-cria-cenas-incrivelmente-detalhadas-com-bonecos-e-cabecas-de-peixes%2F&ei=0-FQVLauO4bjatvbgYgB&bvm=bv.78597519,d.d2s&psig=AFQjCNG58JFF_s-9_mgmjA_KZiAMLewKSg&ust=1414673233771804);";	
+			instacell.style.background="url(http://www.google.pt/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0CAcQjRw&url=http%3A%2F%2Frockntech.com.br%2Fbizarro-artista-cria-cenas-incrivelmente-detalhadas-com-bonecos-e-cabecas-de-peixes%2F&ei=0-FQVLauO4bjatvbgYgB&bvm=bv.78597519,d.d2s&psig=AFQjCNG58JFF_s-9_mgmjA_KZiAMLewKSg&ust=1414673233771804);";	
 			
             img = document.createElement('img');
             imageUrl = image.images[this.options.resolution].url;
