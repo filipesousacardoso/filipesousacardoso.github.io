@@ -8,8 +8,8 @@
       var option, value;
       this.options = {
         target: 'instafeed',
-        get: 'popular',
-        resolution: 'low_resolution',
+        get: 'user',
+        resolution: 'standard_resolution',
         sortBy: 'most-recent',
         links: true,
         mock: false,
