@@ -11,11 +11,12 @@
         get: 'popular',
         resolution: 'low_resolution',
         sortBy: 'most-recent',
-        links: true,
+        links: false,
         mock: false,
         useHttp: false,
 		limit: 9
       };
+	  
       if (typeof params === 'object') {
         for (option in params) {
           value = params[option];
@@ -165,10 +166,18 @@
             fragment.appendChild(node);
           }
         } else {
-          for (_k = 0, _len2 = images.length; _k < _len2; _k++) {
+			console.log("lets see");
+			var instacells = document.getElementsByClassName('instacell');
+			if(instacells!=null){console.log("not null");}
+          
+		  for (_k = 0, _len2 = images.length; _k < _len2; _k++) {
             image = images[_k];
             img = document.createElement('img');
             imageUrl = image.images[this.options.resolution].url;
+			
+			var instacell=instacells[_k];
+			instacell.style.backgroundColor=white;		
+			
             if (!this.options.useHttp) {
               imageUrl = imageUrl.replace('http://', '//');
             }
