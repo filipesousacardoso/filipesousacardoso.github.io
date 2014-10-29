@@ -76,6 +76,11 @@
     -o-transition: all 0.3s ease-in-out;
 }
 
+.B{border-bottom:15px solid #00a99d;}
+.D{border-left:15px solid #247878;}
+.F{border-right:15px solid #247878;}
+.H{border-top:15px solid #00a99d;}
+
 .A:hover,.G:hover{
 	background:#247878;
 }
