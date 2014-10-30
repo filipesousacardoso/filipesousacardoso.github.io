@@ -48,9 +48,9 @@
           throw new Error("Missing clientId or accessToken.");
         }
       }
-      /*if ((this.options.before != null) && typeof this.options.before === 'function') {
+      if ((this.options.before != null) && typeof this.options.before === 'function') {
         this.options.before.call(this);
-      }*/
+      }
       if (typeof document !== "undefined" && document !== null) {
         script = document.createElement('script');
         script.id = 'instafeed-fetcher';
@@ -65,9 +65,7 @@
     };
 
     Instafeed.prototype.parse = function(response) {
-      /*var anchor, fragment, header, htmlString, image, imageString, imageUrl, images, img, imgUrl, instanceName, node, reverse, sortSettings, tmpEl, _i, _j, _k, _len, _len1, _len2, _ref;*/
-	  
-	  var image, images, _k, _len2;
+      var anchor, fragment, header, htmlString, image, imageString, imageUrl, images, img, imgUrl, instanceName, node, reverse, sortSettings, tmpEl, _i, _j, _k, _len, _len1, _len2, _ref;
 	  
       if (typeof response !== 'object') {
         if ((this.options.error != null) && typeof this.options.error === 'function') {
@@ -97,25 +95,25 @@
         this.options.success.call(this, response);
       }
       this.context.nextUrl = '';
-      /*if (response.pagination != null) {
+      if (response.pagination != null) {
         this.context.nextUrl = response.pagination.next_url;
       }
       if (this.options.sortBy !== 'none') {
         if (this.options.sortBy === 'random') {
           sortSettings = ['', 'random'];
-        } else {*/
-       //sortSettings = this.options.sortBy.split('-');
-       //}
-       /*reverse = sortSettings[0] === 'least' ? true : false;
+        } else {
+       sortSettings = this.options.sortBy.split('-');
+       }
+       reverse = sortSettings[0] === 'least' ? true : false;
         switch (sortSettings[1]) {
           case 'random':
             response.data.sort(function() {
               return 0.5 - Math.random();
             });
             break;
-          case 'recent':*/
-            response.data = this._sortBy(response.data, 'created_time', false); //reverse);
-           /* break;
+          case 'recent':
+            response.data = this._sortBy(response.data, 'created_time', reverse);
+            break;
           case 'liked':
             response.data = this._sortBy(response.data, 'likes.count', reverse);
             break;
@@ -123,17 +121,17 @@
             response.data = this._sortBy(response.data, 'comments.count', reverse);
             break;
           default:
-            throw new Error("Invalid option for sortBy: '" + this.options.sortBy + "'.");*/
-        //}
-     // }
-      //if ((typeof document !== "undefined" && document !== null) && this.options.mock === false) {
+            throw new Error("Invalid option for sortBy: '" + this.options.sortBy + "'.");
+        }
+      }
+      if ((typeof document !== "undefined" && document !== null) && this.options.mock === false) {
         images = response.data;
         if (this.options.limit != null) {
           if (images.length > this.options.limit) {
             images = images.slice(0, this.options.limit + 1 || 9e9);
           }
         }
-        /*fragment = document.createDocumentFragment();
+        fragment = document.createDocumentFragment();
         if ((this.options.filter != null) && typeof this.options.filter === 'function') {
           images = this._filter(images, this.options.filter);
         }
@@ -166,7 +164,7 @@
             node = _ref[_j];
             fragment.appendChild(node);
           }
-        } else {*/
+        } else {
 			
 			var instacells = document.getElementsByClassName('instacell');
 			
@@ -176,7 +174,7 @@
 			var instacell=instacells[_k];
 			instacell.style.backgroundImage="url("+image.images[this.options.resolution].url+")";
 			
-            /*img = document.createElement('img');
+            img = document.createElement('img');
             imageUrl = image.images[this.options.resolution].url;
             if (!this.options.useHttp) {
               imageUrl = imageUrl.replace('http://', '//');
@@ -189,10 +187,10 @@
               fragment.appendChild(anchor);
             } else {
               fragment.appendChild(img);
-            }*/
-         // }
-        //}
-       /* document.getElementById(this.options.target).appendChild(fragment);
+            }
+          }
+        }
+        document.getElementById(this.options.target).appendChild(fragment);
         header = document.getElementsByTagName('head')[0];
         header.removeChild(document.getElementById('instafeed-fetcher'));
         instanceName = "instafeedCache" + this.unique;
@@ -201,18 +199,18 @@
           delete window[instanceName];
         } catch (e) {
 
-        }*/
+        }
       }
-      /*if ((this.options.after != null) && typeof this.options.after === 'function') {
+      if ((this.options.after != null) && typeof this.options.after === 'function') {
         this.options.after.call(this);
-      }*/
+      }
       return true;
     };
 
     Instafeed.prototype._buildUrl = function() {
       var base, endpoint, final;
       base = "https://api.instagram.com/v1";
-      /*switch (this.options.get) {
+      switch (this.options.get) {
         case "popular":
           endpoint = "media/popular";
           break;
@@ -228,7 +226,7 @@
           }
           endpoint = "locations/" + this.options.locationId + "/media/recent";
           break;
-        case "user":*/
+        case "user":
           if (typeof this.options.userId !== 'number') {
             throw new Error("No user specified. Use the 'userId' option.");
           }
@@ -236,10 +234,10 @@
             throw new Error("No access token. Use the 'accessToken' option.");
           }
           endpoint = "users/" + this.options.userId + "/media/recent";
-         /* break;
+          break;
         default:
           throw new Error("Invalid option for get: '" + this.options.get + "'.");
-      }*/
+      }
       final = "" + base + "/" + endpoint;
       if (this.options.accessToken != null) {
         final += "?access_token=" + this.options.accessToken;
@@ -261,7 +259,7 @@
       return "" + (S4()) + (S4()) + (S4()) + (S4());
     };
 
-   /* Instafeed.prototype._makeTemplate = function(template, data) {
+    Instafeed.prototype._makeTemplate = function(template, data) {
       var output, pattern, varName, varValue, _ref;
       pattern = /(?:\{{2})([\w\[\]\.]+)(?:\}{2})/;
       output = template;
@@ -271,7 +269,7 @@
         output = output.replace(pattern, "" + varValue);
       }
       return output;
-    };*/
+    };
 
     Instafeed.prototype._getObjectProperty = function(object, property) {
       var piece, pieces;
@@ -311,7 +309,7 @@
       return data;
     };
 
-   /* Instafeed.prototype._filter = function(images, filter) {
+    Instafeed.prototype._filter = function(images, filter) {
       var filteredImages, image, _fn, _i, _len;
       filteredImages = [];
       _fn = function(image) {
@@ -324,7 +322,7 @@
         _fn(image);
       }
       return filteredImages;
-    };*/
+    };
 
     return Instafeed;
 
