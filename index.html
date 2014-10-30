@@ -15,17 +15,24 @@
         <link rel="stylesheet" href="css/floor5.css">
         <link rel="stylesheet" href="css/floor6.css">
         <!--<link rel="stylesheet" href="css/animate.css">-->
+        <link href="css/jquery.bxslider.css" rel="stylesheet" />
         
         <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 		<script src="js/ascensor.js"></script>
         <script src="js/modernizr.js"></script>
         <script type="text/javascript" src="js/instafeed.js"></script>
+		<script src="js/jquery.bxslider.min.js"></script>
+		
         
         <script>
 			
 			$(window).load(function(){
    				setTileSize();
 				setNavBar();
+			});
+			
+			$(document).ready(function(){
+  				$('.bxslider').bxSlider();
 			});
 			
 		</script>
@@ -268,7 +275,7 @@
                 <section class="container">
                 <section class="portfolio">
                    
-                       <ul class="grid cs-style-3">
+                       <!--<ul class="grid cs-style-3">
 				<li>
 					<figure>
 						<img src="img/portfolio/triplux.jpg" alt="triplux">
@@ -324,8 +331,14 @@
 						</figcaption>
 					</figure>
 				</li>
-			</ul>
-                             
+			</ul>-->
+                   <ul class="bxslider">
+  <li style="text-align:center;"><img src="img/portfolio/triplux.jpg" alt="triplux"></li>
+  <li><img src="img/portfolio/flyers.jpg" alt="flyers"></li>
+  <li><img src="img/portfolio/fashionapp.jpg" alt="fashionapp"></li>
+  <li><img src="img/portfolio/swigies.jpg" alt="flyers"></li>
+  <li><img src="img/portfolio/emood.jpg" alt="emood"></li>
+</ul>          
                 </section>
                 </section>
 			</div>
