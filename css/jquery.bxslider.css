@@ -26,7 +26,7 @@
 	-o-transform: translateY(-50%);
 	-webkit-transform:translateY(-50%);
 	transform:  translateY(-50%);
-	border:10px solid #247878;
+	border:5px solid #247878;
 	background: #247878;
 }
 
@@ -34,6 +34,7 @@
 	max-width:100%;
 	display:table;
 	margin: 0 auto;
+	border:5px solid #247878; 
 }
 
 /** THEME
