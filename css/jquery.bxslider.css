@@ -20,23 +20,27 @@
 	padding: 0;
 	*zoom: 1;
 	top:50%;
+	width:90%;
 	
 	-moz-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	-webkit-transform:translateY(-50%);
 	transform:  translateY(-50%);
+	text-align:center;
+	border:10px solid #247878;
+	background: #247878;
 }
 
 .bx-wrapper img {
-	max-width: 100%;
+	max-width:100%;
 	display: block;
+	margin: 0 auto;
 }
 
 /** THEME
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-	background: #247878;
 	
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
