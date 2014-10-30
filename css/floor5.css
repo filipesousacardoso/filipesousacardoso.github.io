@@ -9,10 +9,14 @@
 	display:table-row;
 	position: relative;
 	background: #2c3f52;
-	text-align:center;
+	text-align:justify;
 }
 
 .bxslider figcaption h3 {
+	vertical-align:middle;
+	display:table-cell;
+	height:50px;
+	padding:5px 10px;
 	color: #fff;
 	font-size:12px;
 }
