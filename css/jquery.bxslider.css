@@ -26,14 +26,13 @@
 	-o-transform: translateY(-50%);
 	-webkit-transform:translateY(-50%);
 	transform:  translateY(-50%);
-	text-align:center;
 	border:10px solid #247878;
 	background: #247878;
 }
 
-.bx-wrapper img {
+.bx-wrapper figure {
 	max-width:100%;
-	display: block;
+	display:table;
 	margin: 0 auto;
 }
 
@@ -53,7 +52,7 @@
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
 	position: absolute;
-	bottom: 0px;
+	top: -10px;
 	width: 100%;
 }
 
