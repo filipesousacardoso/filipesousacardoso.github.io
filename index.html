@@ -216,62 +216,59 @@
                     	                      
                         <div id="table">
   	    					<div class="row">
-            					<span class="cell A"><img src="img/code1.png" alt="Code">
-                                <div id="skilllistd">
-                                    • HTML
-                                    • CSS
-                                    • JAVASCRIPT
-                                    • PHP
-                                    • C++
-                                    • C#
-                                    • SQL •
-                                    </div>
-                                    <div class="backlettering" id="code">CODE</div></span>
-            					<span class="cell B">
-                                	<div id="skilllist">
+                            
+            					<span class="cell A">
+                               		<div id="imgcontainer"><img src="img/code1.png" alt="Code"></div>
+                               		<div id="skilllist"><div id="list">
+                                    	• HTML
+                                    	• CSS
+                                    	• JAVASCRIPT
+                                    	• PHP
+                                   		• C++
+                                    	• C#
+                                    	• SQL •
+                                	</div></div>
+                                	<div class="backlettering" id="code">CODE</div>
+                                </span>
+            					
+           						<span class="cell B">
+                                	<div id="imgcontainer"><img src="img/languages.png" alt="Languages"></div>
+                                	<div id="skilllist"><div id="list">
+                                    	• PORTUGUESE
+                                    	• ENGLISH
+                                    	• SPANISH
+                                    	• 
+                                 	</div></div>
+                                 	<div class="backlettering" id="languages">LANGUAGES</div>
+                                 </span>
+                                 
+        					</div>        					
+                            <div class="row">
+                            
+            					<span class="cell C">
+                                	<div id="imgcontainer"><img src="img/pc1.png" alt="Pc"></div>
+                                	<div id="skilllist"><div id="list">
                                     	• MS OFFICE
                                         • WINDOWS
                                         • CHROME
                                         • FIREFOX
                                         • LINUX
                                         • 
-                                    </div>
-                                    <div class="backlettering" id="pc">PC</div>                    	
+                                	</div></div>
+                                	<div class="backlettering" id="pc">PC</div> 
                                 </span>
-           						<span class="cell C"><img src="img/languages.png" alt="Languages"></span>
-            					<span class="cell D">
-                               		<div id="skilllist">
-                                    • HTML
-                                    • CSS
-                                    • JAVASCRIPT
-                                    • PHP
-                                    • C++
-                                    • C#
-                                    • SQL •
-                                    </div>
-                                    <div class="backlettering" id="code">CODE</div>
-                               </span>
-        					</div>
-        					<div class="row">
-            					<span class="cell E"><img src="img/pc1.png" alt="Pc"></span>
-           						<span class="cell F">
-                                	<div id="skilllist">
+           						           					
+                                <span class="cell D">
+                                	<div id="imgcontainer"><img src="img/design.png" alt="Design"></div>
+                                	<div id="skilllist"><div id="list">
                                     • PHOTOSHOP
                                     • ILLUSTRATOR
                                     • DRAWING
                                     • 
-                                    </div>
-                                    <div class="backlettering" id="design">DESIGN</div>
+									</div></div>
+                                	<div class="backlettering" id="design">DESIGN</div>
                                 </span>
-            					<span class="cell G"><img src="img/design.png" alt="Design"></span>
-            					<span class="cell H">
-                                	<div id="skilllist">
-                                    • PORTUGUESE
-                                    • ENGLISH
-                                    • SPANISH
-                                    • 
-                                    </div>
-                                    <div class="backlettering" id="languages">LANGUAGES</div>
+                                
         					</div>
     					</div>
                                                                     
@@ -553,24 +550,6 @@
 		}
 		
 		</script>
-        
-        <script>
-        	function showAndHide(trigger, item1, item2) {
-				$(trigger).on('mouseenter', function() {
-					$(item1).hide();
-					$(item2).css('display', 'table-cell');
-				})
-				.on('mouseleave', function() {
-					$(item1).css('display', 'table-cell');
-					$(item2).hide();  
-				});
-			}
-
-			showAndHide('.A', '.C', '.D');
-			showAndHide('.C', '.G', '.H');
-			showAndHide('.E', '.A', '.B');
-			showAndHide('.G', '.E', '.F');
-        </script>
        <!-- <script src="js/toucheffects.js"></script>-->
         
 	</body>
