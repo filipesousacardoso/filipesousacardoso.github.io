@@ -49,7 +49,7 @@ min-width: 1170px
 @media only screen and (min-width: 780px) {
 .cd-container {
 	left:50%;
-	width:100%;
+	max-width:100%;
 }
 .cd-container::after {
 	position:absolute;
@@ -211,7 +211,10 @@ Main components
 }
 
 .cd-timeline-content p, .cd-timeline-content .cd-date, .cd-timeline-content h3 {
-  font-size: 10px;  
+  font-size: 10px;
+}
+
+.cd-timeline-content p{
   display:none;
 }
 
