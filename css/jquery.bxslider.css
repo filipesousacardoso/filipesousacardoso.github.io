@@ -20,7 +20,7 @@
 	padding: 0;
 	*zoom: 1;
 	top:50%;
-	width:90%;
+	width:100%;
 	
 	-moz-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
@@ -29,6 +29,12 @@
 	border:5px solid #247878;
 	background: #247878;
 }
+
+@media only screen and (min-width: 780px) {
+.bx-wrapper {
+	width:90%;
+}
+	}
 
 .bx-wrapper figure {
 	max-width:100%;
