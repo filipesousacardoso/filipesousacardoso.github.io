@@ -20,7 +20,8 @@ min-width: 1170px
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
 	left:50%;
-	width:360px;
+	width:420px;
+	color:white;
 	
 	transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
@@ -136,7 +137,7 @@ Main components
   position: absolute;
   top: -4px;
   width: 38px;
-  height: 198px;
+  height: 274px;
   border-radius: 50px;
   background:white;
   opacity:0.3;
@@ -179,7 +180,7 @@ Main components
   }
   
   .cd-timeline-extend-img {
-  height: 168px;
+  height: 244px;
   left: 50%;
   
   transform:translateX(-50%);
@@ -202,16 +203,14 @@ Main components
   clear: both;
 }
 .cd-timeline-content h2 {
-  color: white;
   font-size: 13px;
 }
-.cd-timeline-content p, .cd-timeline-content .cd-date {
-  color: white; 
-  font-size: 12px;
+
+.cd-timeline-content h3 {
+  font-weight:bold;
 }
 
-.cd-timeline-content .cd-date {
-  color: white; 
+.cd-timeline-content p, .cd-timeline-content .cd-date, .cd-timeline-content h3 {
   font-size: 10px;
 }
 
@@ -258,4 +257,13 @@ Main components
     text-align: right;
   }
 
+}
+
+#cv{
+	position:absolute;
+	bottom:5%;
+	width:100%;
+	text-align:center;
+	color:white;
+	font-size:8px;
 }
