@@ -26,7 +26,6 @@
 	-o-transform: translateY(-50%);
 	-webkit-transform:translateY(-50%);
 	transform:  translateY(-50%);
-	border:5px solid #247878;
 	background: #247878;
 }
 
@@ -34,13 +33,12 @@
 .bx-wrapper {
 	width:90%;
 }
-	}
+}
 
 .bx-wrapper figure {
 	max-width:100%;
 	display:table;
-	margin: 0 auto;
-	border:5px solid #247878; 
+	margin: 0 auto; 
 }
 
 /** THEME
@@ -147,7 +145,7 @@
 	display: none;
 }
 
-/* AUTO CONTROLS (START / STOP) */
+/* AUTO CONTROLS (START / STOP)
 
 .bx-wrapper .bx-controls-auto {
 	text-align: center;
@@ -183,7 +181,7 @@
 	background-position: -86px -33px;
 }
 
-/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT 
 
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
 	text-align: left;
@@ -195,7 +193,7 @@
 	width: 35px;
 }
 
-/* IMAGE CAPTIONS */
+/* IMAGE CAPTIONS 
 
 .bx-wrapper .bx-caption {
 	position: absolute;
@@ -212,4 +210,4 @@
 	display: block;
 	font-size: .85em;
 	padding: 10px;
-}
+}*/
