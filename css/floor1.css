@@ -126,3 +126,13 @@
 .instacell-9{
 	background-image:url(../img/cover9.jpg);
 }*/
+
+#instagram{
+	position: absolute;
+	top: 0px;
+	left:50%;
+	-moz-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
