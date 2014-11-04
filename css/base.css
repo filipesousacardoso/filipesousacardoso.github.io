@@ -72,11 +72,11 @@ table {
   HTML & BODY
 ============================================================ */
 body {
-	background-color: white;
+	background-color: black;
 	color: black;
 	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
-	font-weight:lighter;
+	font-weight:normal;
 	line-height: 1.5;
 }
 
@@ -90,7 +90,6 @@ body {
   	right:0px;
   	left:0px;
     overflow:hidden;
-	//padding:0 5%;
 }
 
 @media only screen and (min-width: 780px) {

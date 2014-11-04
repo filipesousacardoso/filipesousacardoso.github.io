@@ -12,7 +12,7 @@
         links: false,
         mock: false,
         useHttp: false,
-		limit:9
+		limit:12
       };
       if (typeof params === 'object') {
         for (option in params) {
@@ -103,12 +103,15 @@
 	  }
 	  		
 	  instacells = document.getElementsByClassName('instacell');
+	  var count=0;
 	  for (_k = 0, _len2 = images.length; _k < _len2; _k++) {
 	  	image = images[_k];
+			if(image.type!="video"){
 			
-			instacell=instacells[_k];
+			instacell=instacells[count];
 			instacell.style.backgroundImage="url("+image.images[this.options.resolution].url+")";
-
+			count++;
+			}
 	  }
 		
 		header = document.getElementsByTagName('head')[0];

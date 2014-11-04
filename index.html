@@ -16,13 +16,11 @@
         <link rel="stylesheet" href="css/floor5.css">
         <link rel="stylesheet" href="css/floor6.css">
         <!--<link rel="stylesheet" href="css/animate.css">-->
-        <link href="css/jquery.bxslider.css" rel="stylesheet" />
         
         <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 		<script src="js/ascensor.js"></script>
         <script src="js/modernizr.js"></script>
         <script type="text/javascript" src="js/instafeed.js"></script>
-		<script src="js/jquery.bxslider.min.js"></script>
 		
         
         <script>
@@ -174,7 +172,7 @@
 						</div>
 
 						<div class="cd-timeline-block">
-                        	<div class="cd-timeline-extend-img"></div>							
+                        	<!--<div class="cd-timeline-extend-img"></div>-->							
 							<div class="cd-timeline-img">
 								<img src="img/school.png" alt="College"/>
 							</div>
@@ -306,53 +304,76 @@
             
             <!-- FLOOR 5 -->
 			<div class="floor-5">
-            <div id="barport"></div>
                 <section class="container">
-                
-			<ul class="bxslider">
- 				 <li>
-					<figure>
-                    	<img src="img/portfolio/triplux.jpg" alt="triplux">
-                        <figcaption>
-							<h3>Triplux - <span>Logo & Branding for an high-end travel agency</span></h3>
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="img/portfolio/flyers.jpg" alt="flyers">
+                	<div class="direction right" data-direction="right"></div>
+                	<div class="portfolio">
+               		<figure>
+						<img src="img/portfolio/emood.jpg" alt="emood">
 						<figcaption>
-							<h3>Flyers - <span>Some flyers done for nightclub parties in Lisbon</span></h3>
+							<h3>eMood - <span>Website where anyone can get content suggestions based on the users mood</span></h3>                            
 						</figcaption>
 					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="img/portfolio/fashionapp.jpg" alt="fashionapp">
-						<figcaption>
-							<h3>Fashion - <span>Fashion app concept designed to showcase looks from fashion bloggers</span></h3>       
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
+                    </div>
+                </section>
+			</div>
+            
+           <div class="floor-5 swigies">
+                <section class="container">
+                	<div class="direction right" data-direction="right"></div>
+                    <div class="direction left" data-direction="left"></div>
+                	<div class="portfolio">
+                    <figure>
 						<img src="img/portfolio/swigies.jpg" alt="flyers">
 						<figcaption>
 							<h3>Swigies - <span>Social app with a new way for people to interact</span></h3>
                             
 						</figcaption>
 					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="img/portfolio/emood.jpg" alt="emood">
-						<figcaption>
-							<h3>eMood - <span>Website where anyone can get content suggestions based on the users mood</span></h3>                            
+                    </div>
+                </section>
+			</div>
+            
+            <div class="floor-5 triplux">
+                <section class="container">
+                	<div class="direction right" data-direction="right"></div>
+                    <div class="direction left" data-direction="left"></div>
+                	 <div class="portfolio">
+                     <figure>
+                    	<img src="img/portfolio/triplux.jpg" alt="triplux">
+                        <figcaption>
+							<h3>Triplux - <span>Logo & Branding for an high-end travel agency</span></h3>
 						</figcaption>
 					</figure>
-				</li>
-			</ul>          
-                	
+                    </div>
+                </section>
+			</div>
+            
+            <div class="floor-5 flyers">
+                <section class="container">
+                	<div class="direction right" data-direction="right"></div>
+                    <div class="direction left" data-direction="left"></div>
+                	<div class="portfolio">
+                    <figure>
+						<img src="img/portfolio/flyers.jpg" alt="flyers">
+						<figcaption>
+							<h3>Flyers - <span>Some flyers done for nightclub parties in Lisbon</span></h3>
+						</figcaption>
+					</figure>
+                    </div>
+                </section>
+			</div>
+            
+            <div class="floor-5 fashion">
+                <section class="container">
+                    <div class="direction left" data-direction="left"></div>
+                	<div class="portfolio">
+                    <figure>
+						<img src="img/portfolio/fashionapp.jpg" alt="fashionapp">
+						<figcaption>
+							<h3>Fashion - <span>Fashion app concept designed to showcase looks from fashion bloggers</span></h3>       
+						</figcaption>
+					</figure>
+                    </div>
                 </section>
 			</div>
             
@@ -523,18 +544,32 @@
 		</script>
         
         <script>
-			var ascensor = $('#ascensorBuilding').ascensor({direction:"y"});
+			var ascensor = $('#ascensorBuilding').ascensor({direction:[[0,0],[1,0],[2,0],[3,0],[4,0],[4,1],[4,2],[4,3],[4,4],[5,0]]});
+			//:"y"});
 			var ascensorInstance = $('#ascensorBuilding').data('ascensor');
 							
 			$(".list").click(function(event, index) {
-				ascensorInstance.scrollToFloor($(this).index()-1);
+				if($(this).index()!=6)
+					ascensorInstance.scrollToFloor($(this).index()-1);
+				else ascensorInstance.scrollToFloor(9);
 			});
 
 			$(".list:eq("+ ascensor.data("current-floor") +")").addClass("selected");
 
 			ascensor.on("scrollStart", function(event, floor){
-				$(".list").removeClass("selected");
-				$(".list:eq("+floor.to+")").addClass("selected");
+				
+				if(floor.to==5||floor.to==6||floor.to==7||floor.to==8){}
+				else if(floor.from==4&&floor.to==5){}
+				else{					
+					$(".list").removeClass("selected");
+					if(floor.to!=9)
+						$(".list:eq("+floor.to+")").addClass("selected");
+					else $(".list:eq("+5+")").addClass("selected");
+				}
+			});
+			
+			$(".direction").click(function() {
+				ascensorInstance.scrollToDirection($(this).data("direction"));
 			});
 		</script>
         
@@ -557,7 +592,7 @@
 		document.addEventListener('DOMContentLoaded', run, false);
 
 		var ran = false;
-		var weights = ['lighter', 'bolder'];
+		var weights = ['normal', 'bolder'];
 
 		function choose(array) {
     	return array[Math.floor(Math.random() * array.length)];

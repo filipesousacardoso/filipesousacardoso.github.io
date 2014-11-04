@@ -102,8 +102,7 @@
 	transform: translateX(-100%);
 }
 
-.backlettering{	
-	font-weight:bold;
+.backlettering{
 	line-height:1;
 	font-size:10px;
 }
@@ -131,6 +130,7 @@
 	bottom:2px;
 	right:2px;
 }
+
 #list{
 	position:relative;
 	width:100%;
