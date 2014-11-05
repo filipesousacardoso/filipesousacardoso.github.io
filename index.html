@@ -30,10 +30,6 @@
 				setNavBar();
 			});
 			
-			$(document).ready(function(){
-  				$('.bxslider').bxSlider();
-			});
-			
 		</script>
         <script type="text/javascript">
     		var feed = new Instafeed({
@@ -305,6 +301,7 @@
             
             <!-- FLOOR 5 -->
 			<div class="floor-5">
+            	<div class="backstripe backright"></div>
                 <section class="container">
                 	<div class="direction right" data-direction="right"></div>
                 	<div class="portfolio">
@@ -319,6 +316,7 @@
 			</div>
             
            <div class="floor-5 swigies">
+           		<div class="backstripe backboth"></div>
                 <section class="container">
                 	<div class="direction right" data-direction="right"></div>
                     <div class="direction left" data-direction="left"></div>
@@ -335,6 +333,7 @@
 			</div>
             
             <div class="floor-5 triplux">
+            	<div class="backstripe backboth"></div>
                 <section class="container">
                 	<div class="direction right" data-direction="right"></div>
                     <div class="direction left" data-direction="left"></div>
@@ -350,6 +349,7 @@
 			</div>
             
             <div class="floor-5 flyers">
+            	<div class="backstripe backboth"></div>
                 <section class="container">
                 	<div class="direction right" data-direction="right"></div>
                     <div class="direction left" data-direction="left"></div>
@@ -365,6 +365,7 @@
 			</div>
             
             <div class="floor-5 fashion">
+            	<div class="backstripe backleft"></div>
                 <section class="container">
                     <div class="direction left" data-direction="left"></div>
                 	<div class="portfolio">
@@ -560,12 +561,11 @@
 			ascensor.on("scrollStart", function(event, floor){
 				
 				if(floor.to==5||floor.to==6||floor.to==7||floor.to==8){}
-				else if(floor.from==4&&floor.to==5){}
 				else{					
 					$(".list").removeClass("selected");
-					if(floor.to!=9)
-						$(".list:eq("+floor.to+")").addClass("selected");
-					else $(".list:eq("+5+")").addClass("selected");
+					if(floor.to==9)
+						$(".list:eq("+5+")").addClass("selected");
+					else $(".list:eq("+floor.to+")").addClass("selected");
 				}
 			});
 			

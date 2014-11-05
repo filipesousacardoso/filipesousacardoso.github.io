@@ -12,7 +12,7 @@
         links: false,
         mock: false,
         useHttp: false,
-		limit:12
+		//limit:20
       };
       if (typeof params === 'object') {
         for (option in params) {
@@ -100,11 +100,23 @@
       	if (images.length > this.options.limit) {
         	images = images.slice(0, this.options.limit + 1 || 9e9);
         }
-	  }
-	  		
+	  }  		
 	  instacells = document.getElementsByClassName('instacell');
+	  
 	  var count=0;
-	  for (_k = 0, _len2 = images.length; _k < _len2; _k++) {
+	  var _k=0;
+	  do{
+		  image = images[_k];
+			if(image.type!="video"){			
+				instacell=instacells[count];
+				instacell.style.backgroundImage="url("+image.images[this.options.resolution].url+")";
+				count++;
+			}
+			_k++;		  
+		  }
+	  while(count<9 && _k<= images.length);
+	  
+	 /*for (_k = 0, _len2 = images.length; _k < _len2; _k++) {
 	  	image = images[_k];
 			if(image.type!="video"){
 			
@@ -112,7 +124,7 @@
 			instacell.style.backgroundImage="url("+image.images[this.options.resolution].url+")";
 			count++;
 			}
-	  }
+	  }*/
 		
 		header = document.getElementsByTagName('head')[0];
         header.removeChild(document.getElementById('instafeed-fetcher'));
