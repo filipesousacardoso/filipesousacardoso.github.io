@@ -31,6 +31,25 @@
 			});
 			
 		</script>
+        <script> 
+		$(document).ready(function(){
+  			$(".navCollapsed").click(function(){
+    			if($('.list').css('display')=='none'){
+					$('.links-to-floor').css('top', '50%');
+					$('.links-to-floor').css('transform', 'translateY(-50%)');
+					$('.links-to-floor').css('-o-transform', 'translateY(-50%)');
+					$('.links-to-floor').css('-moz-transform', 'translateY(-50%)');
+					$('.links-to-floor').css('-webkit-transform', 'translateY(-50%)');}
+				else{
+					$('.links-to-floor').css('top', '10px');
+					$('.links-to-floor').css('transform', 'translateY(0)');
+					$('.links-to-floor').css('-o-transform', 'translateY(0)');
+					$('.links-to-floor').css('-moz-transform', 'translateY(0)');
+					$('.links-to-floor').css('-webkit-transform', 'translateY(0)');}
+				$(".list").slideToggle("slow");				
+			});
+		});
+		</script>
         <script type="text/javascript">
     		var feed = new Instafeed({
        			get:'user',
@@ -390,7 +409,7 @@
 			</div>
             
         </div>
-       <!-- <nav>
+        <nav>
 			<ul class="links-to-floor">
             	<li class="navCollapsed  navButton"><img src="img/feed_.png" alt="menu" /></li>
             	<li class="list navButton"><a>Home</a></li>
@@ -400,7 +419,7 @@
 				<li class="list navButton"><a>Portfolio</a></li>
 				<li class="list navButton"><a>Contacts</a></li>
 			</ul>
-		</nav> -->
+		</nav>
         
 		<div id="underconstruction">Under Construction</div>
         
@@ -409,42 +428,18 @@
         <script>
 		
 			$(window).resize(function(){
-   				setDisplay();
    				setTileSize();
 				setNavBar();
 			});
 						
         	function setNavBar(){
-				if (window.innerWidth >= 780) {
-					$('.links-to-floor').css('width', '90px');
-					$('.links-to-floor').css('height', 'auto');
-					$('li a').css('width', '80px');
-					$('li a').css('height', '80px');
-					$('.navCollapsed').css('width', '80px');
-					$('.navCollapsed').css('height', '80px');
-					
+				console.log(window.innerHeight);
+				console.log($('.links-to-floor').height());
+				if (window.innerHeight < 7*61) {
+					$('.links-to-floor').css('display', 'none');					
 				} else {
-					$('.links-to-floor').css('width', (((window.innerHeight-(8*5))/7)+10)+'px');
-					$('li a').css('width', (((window.innerHeight-(8*5))/7))+'px');
-					$('li a').css('height', (((window.innerHeight-(8*5))/7))+'px');
-					$('.navCollapsed').css('width', (((window.innerHeight-(8*5))/7))+'px');
-					$('.navCollapsed').css('height', (((window.innerHeight-(8*5))/7))+'px');
+					$('.links-to-floor').css('display', 'block');
 				}
-			}
-					
-			function setDisplay(){
-				
-				if (window.innerWidth >= 780) {
-					$('.navCollapsed').hide();
-					$('.list').css('display', 'inline-block');
-					
-				} else {					
-					if($('.list').is(':visible') && $('.navCollapsed').is(':visible') ){}
-					else{
-						$('.navCollapsed').css('display', 'inline-block');
-						$('.list').hide();
-					}
-				}				
 			}
 						
 			function setTileSize(){
@@ -547,19 +542,6 @@
 				ascensorInstance.scrollToDirection($(this).data("direction"));
 			});
 		</script>
-        
-        <script>
-        	$('.navCollapsed').on('click', function() {
-					if($('.list').is(':visible')){
-						$('.list').hide();
-						$('.links-to-floor').css('height', 'auto');
-    				} else {
-      					$('.list').css('display', 'inline-block');
-						$('.links-to-floor').css('height', '100%');
-											
-    				}
-			});
-        </script>
         
         <script>
 		
