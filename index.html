@@ -27,7 +27,7 @@
 			
 			$(window).load(function(){
    				setTileSize();
-				setNavBar();
+				//setNavBar();
 			});
 			
 		</script>
@@ -390,7 +390,7 @@
 			</div>
             
         </div>
-       <!-- <nav>
+        <nav>
 			<ul class="links-to-floor">
             	<li class="navCollapsed  navButton"><img src="img/feed_.png" alt="menu" /></li>
             	<li class="list navButton"><a>Home</a></li>
@@ -400,7 +400,8 @@
 				<li class="list navButton"><a>Portfolio</a></li>
 				<li class="list navButton"><a>Contacts</a></li>
 			</ul>
-		</nav> -->
+            </div>
+		</nav>
         
 		<div id="underconstruction">Under Construction</div>
         
@@ -409,9 +410,9 @@
         <script>
 		
 			$(window).resize(function(){
-   				setDisplay();
+   				//setDisplay();
    				setTileSize();
-				setNavBar();
+				//setNavBar();
 			});
 						
         	function setNavBar(){
@@ -549,16 +550,23 @@
 		</script>
         
         <script>
-        	$('.navCollapsed').on('click', function() {
-					if($('.list').is(':visible')){
-						$('.list').hide();
-						$('.links-to-floor').css('height', 'auto');
+        	/*$('.navCollapsed').on('click', function() {
+					console.log($('li a').css('height'));
+					if($('li a').height()!=0){
+						//$('.list').hide();
+						//$('.links-to-floor').css('height', 'auto');
+						$('li a').css('height', '0px');
+						$('.links-to-floor').css('bottom', 'auto');
+						
     				} else {
-      					$('.list').css('display', 'inline-block');
-						$('.links-to-floor').css('height', '100%');
-											
+						$('li a').css('display', 'inline-block');
+						$('li a').css('height', '80px');
+						$('.links-to-floor').css('bottom', '5px');
+						
+      					//$('.list').css('display', 'inline-block');
+						//$('.links-to-floor').css('height', '100%');											
     				}
-			});
+			});*/
         </script>
         
         <script>

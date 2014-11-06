@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Filipe Cardoso</title>
+		<meta name="viewport" content="user-scalable=0,width=device-width,initial-scale=1,maximum-scale=1">
+		
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,600' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/floor.css">
+        <link rel="stylesheet" href="css/floor1.css">
+        <link rel="stylesheet" href="css/new.css">
+        
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script type="text/javascript" src="js/instafeed.js"></script>
+		
+        
+        <script>			
+			$(window).load(function(){
+   				setTileSize();
+			});
+			
+		</script>
+		<script>
+		$(document).ready(function(){
+			$('nav').navResponsive();
+		});
+	</script>
+        <script type="text/javascript">
+    		var feed = new Instafeed({
+       			get:'user',
+        		userId: 537633012,
+        		accessToken: '537633012.5a923d1.3c5b5e8b6ab64a67882b422fa2a75442'
+    		});
+    		feed.run();
+		</script>
+        	
+	</head>
+	<body>
+			<div class="floor-1"> 
+			
+                <div id="gradient"></div>
+                <div id="divisionfloor1" class="division"></div>               
+                
+                <section class="container">
+                	<div id="scroll">DOWN</br>⇓</div>
+                	<section class="cover">
+                    	<div class="logo">
+                    		<img src="img/newlogo.png" alt="Filipe Cardoso" height="150px" />
+                        </div>
+                        <div class="name">
+                        	<h1>FILIPE</br>CARDOSO</h1>
+                        	<h2>SOFTWARE DEVELOPER</br>DESIGNER</h2>
+                   		</div>
+                    </section><!--cover --> 
+                </section><!--container-->  
+                <div id="instagram"><img src="img/instagram.png" alt="Instagram"/></div>       
+			</div> 
+        <nav>
+        	<div class="nav-container">
+				<ul class="nav-menu slideUp w-divider">
+            	    <li><a>Home</a></li>
+					<li><a>About me</a></li>
+					<li><a>Path</a></li>
+					<li><a>Skills</a></li>
+					<li><a>Portfolio</a></li>
+					<li><a>Contacts</a></li>
+				</ul>
+				<a class="s-button s-collapse-trigger" href="#"><img src="img/feed_.png" alt="menu" /></a>
+            </div>
+		</nav> 
+        
+        <script>
+        (function($){
+ 
+    $.fn.extend({
+		
+        navResponsive: function() {
+ 
+            return this.each(function() {
+				var nav = $(this);
+				
+				/* s-collapse entire menu */
+				
+				nav.find('.s-collapse-trigger').click(function(e){
+					e.preventDefault();
+					var nav = $(this).siblings('.nav-menu');
+					//if(nav.is(':hidden')){ $(this).addClass('active').text('-'); }
+					//else{ $(this).removeClass('active').text('+'); } 
+					$(this).siblings('.nav-menu').slideToggle();
+				});
+				
+				/* set s-collapse based on nav size */
+				
+				/*var defaultWidth = 0;
+				nav.find('.nav-menu').each(function(){
+					defaultWidth += $(this).outerWidth();
+				});	
+				if(nav.innerWidth() < defaultWidth + 150){
+					nav.addClass('s-collapse'); 
+					nav.find('.nav-menu').slideUp(500);
+				}
+				
+				$(window).resize(function(){
+					var el = nav.find('.nav-menu');
+					if(nav.innerWidth() < defaultWidth + 150)
+					{
+						if(!nav.hasClass('s-collapse'))
+						{
+							nav.addClass('s-collapse', 300);
+							el.find('ul').hide();
+							el.hide();
+							nav.find('.s-collapse-trigger').removeClass('active').text('+');
+						}	
+					}
+					else
+					{
+						if(nav.hasClass('s-collapse'))
+						{
+							nav.find('.s-collapse-trigger:last').addClass('active').text('-');		
+							nav.removeClass('s-collapse', 300);			
+							el.find('ul').show();
+							el.fadeIn();					
+						}	
+					}
+				});*/
+			
+            });
+        }
+    });
+     
+})(jQuery);</script>        
+	</body>
+</html>
