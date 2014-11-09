@@ -49,7 +49,7 @@ min-width: 1170px
 @media only screen and (min-width: 780px) {
 .cd-container {
 	left:50%;
-	max-width:100%;
+	max-width:80%;
 }
 .cd-container::after {
 	position:absolute;

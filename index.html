@@ -319,56 +319,42 @@
 			</div>
             
             <!-- FLOOR 5 -->
-			<div class="floor-5">                
+			<div class="floor-5">
+            	<div class="whitebar"></div>            
                 <section class="container">
-                	<div class="direction right" data-direction="right"></div>
-                	<div class="portfolio">               
-                        <img src="img/portfolio/emood.jpg" alt="emood">
-                        <h3>eMood - Website where anyone can get content suggestions based on the users mood</h3>                        
-                    </div>
-                </section>
-			</div>
-            
-           <div class="floor-5 swigies">     
-                <section class="container">
-                	<div class="direction right" data-direction="right"></div>
-                    <div class="direction left" data-direction="left"></div>
-                	<div class="portfolio">
-                    	<img src="img/portfolio/swigies.jpg" alt="flyers">
-						<h3>Swigies - Social app with a new way for people to interact</h3>
-					</div>
-                </section>
-			</div>
-            
-            <div class="floor-5 triplux">   
-                <section class="container">
-                	<div class="direction right" data-direction="right"></div>
-                    <div class="direction left" data-direction="left"></div>
-                	 <div class="portfolio">
-                     	<img src="img/portfolio/triplux.jpg" alt="triplux">
-                        <h3>Triplux - Logo & Branding for an high-end travel agency</h3>
-					</div>
-                </section>
-			</div>
-            
-            <div class="floor-5 flyers"> 
-                <section class="container">
-                	<div class="direction right" data-direction="right"></div>
-                    <div class="direction left" data-direction="left"></div>
-                	<div class="portfolio">
-                    	<img src="img/portfolio/flyers.jpg" alt="flyers">
-						<h3>Flyers - Some flyers done for nightclub parties in Lisbon</h3>
-					</div>
-                </section>
-			</div>
-            
-            <div class="floor-5 fashion">
-            	<section class="container">
-                    <div class="direction left" data-direction="left"></div>
-                	<div class="portfolio">               
-                    	<img src="img/portfolio/fashionapp.jpg" alt="fashionapp">
-						<h3>Fashion - Fashion app concept designed to showcase looks from fashion bloggers</h3>       
-					</div>
+                	<ul class="portfolium34">
+            			<li>
+                        	<img src="img/portfolio/emood.jpg" alt="menu" />
+                        	<div class="description">
+                            eMood - Website where anyone can get content suggestions based on the users mood
+                            </div>
+                        </li>
+            			<li>
+                        	<img src="img/portfolio/triplux.jpg" alt="menu" />
+                        	<div class="description">
+                            Triplux - Logo & Branding for an high-end travel agency
+                            </div>
+                        </li>
+                        <li>
+                       		<img src="img/portfolio/swigies.jpg" alt="menu" />
+                        	<div class="description">
+                            Swigies - Social app with a new way for people to interact
+                            </div>
+                        </li>
+                        <li>
+                        	<img src="img/portfolio/flyers.jpg" alt="menu" />
+                        	<div class="description">
+                            Flyers - Some flyers done for nightclub parties in Lisbon
+                            </div>
+                        </li>
+                        <li>
+                        	<img src="img/portfolio/fashionapp.jpg" alt="menu" />
+                        	<div class="description">
+                            Fashion - Fashion app concept designed to showcase looks from fashion bloggers
+                            </div>
+                        </li>
+                        <li></li>
+					</ul>
                 </section>
 			</div>
             
@@ -515,27 +501,18 @@
 		</script>
         
         <script>
-			var ascensor = $('#ascensorBuilding').ascensor({direction:[[0,0],[1,0],[2,0],[3,0],[4,0],[4,1],[4,2],[4,3],[4,4],[5,0]]});
-			//:"y"});
+			var ascensor = $('#ascensorBuilding').ascensor({direction:"y"});
 			var ascensorInstance = $('#ascensorBuilding').data('ascensor');
 							
-			$(".list").click(function(event, index) {
-				if($(this).index()!=6)
-					ascensorInstance.scrollToFloor($(this).index()-1);
-				else ascensorInstance.scrollToFloor(9);
+			$(".list").click(function(event, index) {				
+				ascensorInstance.scrollToFloor($(this).index()-1);
 			});
 
 			$(".list:eq("+ ascensor.data("current-floor") +")").addClass("selected");
 
 			ascensor.on("scrollStart", function(event, floor){
-				
-				if(floor.to==5||floor.to==6||floor.to==7||floor.to==8){}
-				else{					
-					$(".list").removeClass("selected");
-					if(floor.to==9)
-						$(".list:eq("+5+")").addClass("selected");
-					else $(".list:eq("+floor.to+")").addClass("selected");
-				}
+				$(".list").removeClass("selected");					
+				$(".list:eq("+floor.to+")").addClass("selected");
 			});
 			
 			$(".direction").click(function() {

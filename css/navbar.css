@@ -17,7 +17,7 @@ li a {
 	
 }
 
-li{border-bottom:2px solid #333;}
+.links-to-floor li {border-bottom:2px solid #333;}
 
 li:last-child{border:0;}
 li:first-child{border:0;}
