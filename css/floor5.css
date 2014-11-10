@@ -14,7 +14,7 @@
 .portfolio ul{
 	list-style: none;
 	text-align:center;
-	padding:5% 2%;
+	padding:4% 2%;
 	
 	position:relative;
 	left:50%;
@@ -86,5 +86,8 @@
 @media (orientation:portrait) {
 .portfolio li{
 	width: 45%;
+}
+.portfolio ul{
+	padding:8% 2%;
 }
 }
