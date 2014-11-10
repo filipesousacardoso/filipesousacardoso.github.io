@@ -164,8 +164,6 @@ Main components
 	-moz-transform:translateX(-50%);
 	-webkit-transform:translateX(-50%);
 	-o-transform:translateX(-50%);
-    /* Force Hardware Acceleration in WebKit */
-    -webkit-backface-visibility: hidden;
   }
 }
 
