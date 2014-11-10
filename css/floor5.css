@@ -134,6 +134,7 @@
 	-moz-transform:translateY(50%);
 	-webkit-transform:translateY(50%);
 	-o-transform:translateY(50%);
+	opacity:0.9;
 }
 
 @media (orientation:portrait) {

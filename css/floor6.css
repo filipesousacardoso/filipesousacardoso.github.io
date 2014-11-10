@@ -93,6 +93,7 @@
 	-moz-background-size: 100% 100%;
 	-o-background-size: 100% 100%;
 	background-size: 100% 100%; 
+	opacity:0.9;
 	
 	height:100%;
 	width:100%;
@@ -102,4 +103,14 @@
 	-moz-transform:translateY(-50%);
 	-webkit-transform:translateY(-50%);
 	-o-transform:translateY(-50%);
+}
+
+.grey{
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;	
+	background:#333;
+	opacity:0.8;	
 }

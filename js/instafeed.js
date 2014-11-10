@@ -63,7 +63,7 @@
 
     Instafeed.prototype.parse = function(response) {
 	  
-	  var image, images, _k, _len2, instacells, instacell;
+	  var image, images, _k, _len2, instacells, instacell, contactfloor;
 	  
       if (typeof response !== 'object') {
         if ((this.options.error != null) && typeof this.options.error === 'function') {
@@ -102,12 +102,15 @@
         }
 	  }  		
 	  instacells = document.getElementsByClassName('instacell');
+	  contactfloor = document.getElementsByClassName('floor-6');
 	  
+	  contactfloor.style.backgroundImage="url("+images[0].images[this.options.resolution].url+")";	
+	  			
 	  var count=0;
 	  var _k=0;
 	  do{
 		  image = images[_k];
-			if(image.type!="video"){			
+			if(image.type!="video"){
 				instacell=instacells[count];
 				instacell.style.backgroundImage="url("+image.images[this.options.resolution].url+")";
 				count++;
