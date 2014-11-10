@@ -1,7 +1,7 @@
 .skills{
 	height:100%;
 	position:relative;
-	background-image:url(../img/background.png);
+	//background-image:url(../img/background.png);
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -105,6 +105,7 @@
 .backlettering{
 	line-height:1;
 	font-size:10px;
+	font-weight:bolder;
 }
 
 #pc{	
@@ -177,4 +178,13 @@
 	position:absolute;
 	right: -100%;
 	top:0;
+}
+
+.divider{
+	height:50%;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;	
+	background:#00a99d;	
 }
