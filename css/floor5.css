@@ -1,7 +1,7 @@
 .portfolio{
 	width: 100%;
 	max-width:1000px;
-	height:80%;
+	height:85%;
 	
 	position:relative;
 	left:50%;
@@ -15,7 +15,7 @@
 .portfolio ul{
 	list-style: none;
 	text-align:center;
-	padding:0;
+	padding:3% 1%;
 	
 	position:relative;
 	left:50%;
@@ -92,12 +92,12 @@
 }
 
 .topbar{
-	height:10%;
+	height:5%;
 	width:100%;
 	position:relative;
 	top:0;
 	background:#00a99d;
-	border-bottom:10px solid #247878;
+	border-bottom:5px solid #247878;
 }
 
 .bottomdesign{
