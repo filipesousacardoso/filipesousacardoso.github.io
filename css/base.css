@@ -92,15 +92,6 @@ body {
     overflow:hidden;
 }
 
-@media only screen and (min-width: 780px) {
-
-.container {
-  //right:100px;
-  //left:0px;
-}
-
-}
-
 /* ============================================================
   TEXT LEVEL SEMANTICS
 ============================================================ */
