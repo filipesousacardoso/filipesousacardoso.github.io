@@ -1,16 +1,30 @@
 .portfolio{
 	width: 100%;
 	max-width:1000px;
-	list-style: none;
-	text-align:center;
-	padding:5%;
+	height:90%;
 	
 	position:relative;
 	left:50%;
 	transform:translateX(-50%);
 	-moz-transform:translateX(-50%);
 	-webkit-transform:translateX(-50%);
-	-o-transform:translateX(-50%);	
+	-o-transform:translateX(-50%);
+	border:2px solid red;	
+}
+
+.portfolio ul{
+	list-style: none;
+	text-align:center;
+	padding:5%;
+	
+	position:relative;
+	left:50%;
+	top:50%;
+	transform:translateX(-50%) translateY(-50%);
+	-moz-transform:translateX(-50%) translateY(-50%);
+	-webkit-transform:translateX(-50%) translateY(-50%);
+	-o-transform:translateX(-50%) translateY(-50%);
+	border:2px solid red;	
 }
 
 .portfolio li{
