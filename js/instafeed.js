@@ -111,8 +111,9 @@
 		  image = images[_k];
 			if(image.type!="video"){
 				if(!contactsimg){
-				contactfloor[0].style.backgroundImage="url("+images[0].images[this.options.resolution].url+")";
-				contactsimg=true;}
+					//contactfloor[0].style.backgroundImage="url("+images[_k].images[this.options.resolution].url+")";
+					contactsimg=true;
+				}
 				instacell=instacells[count];
 				instacell.style.backgroundImage="url("+image.images[this.options.resolution].url+")";
 				count++;

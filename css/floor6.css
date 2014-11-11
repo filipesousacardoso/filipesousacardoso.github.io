@@ -21,10 +21,10 @@
 }
 
 .box h1{
-	font-size:35px;
+	font-size:30px;
 }
 .box h2{
-	font-size:50px;
+	font-size:45px;
 }
 
 .social_box{
@@ -110,6 +110,59 @@
 	position:absolute;
 	top:0;
 	left:0;	
-	background:black;
-	opacity:0.7;	
+	background:#333;	
 }
+
+.bottombar{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	text-align:center;
+	font-size:10px;
+	color:white;
+	height:30px;
+}
+
+.bottomtable{
+	display:table;
+	max-width:800px;
+	width:100%;
+	heith:30px;
+	//border:2px solid red;
+	font-size:12px;
+	color:white;
+	position:absolute;
+	bottom:5%;
+	left:50%;
+	transform:translateX(-50%);
+	-moz-transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	-o-transform:translateX(-50%);
+	}
+.bottomrow{
+	display:table-row;
+	height:50%;
+	width:100%;
+	//border:2px solid red;}
+.bottomcell{
+	padding:2%;
+	display:table-cell;
+	width:33.333333%;
+	height:100%;	
+}
+	
+.bottomcell td img{
+	max-height:30px;
+	height:auto;
+	//vertical-align:middle;}
+.bottomcell a{
+	font-size:12px;
+	color:white;
+}
+.bottomcell table{
+	//border:2px solid blue;}
+.bottomcell td{
+	padding:2px;
+	//border:2px solid blue;
+	vertical-align:middle;
+	//display:inline-block;}
