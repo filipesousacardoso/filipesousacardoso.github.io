@@ -28,6 +28,7 @@
 			$(window).load(function(){
    				setTileSize();
 				setNavBar();
+				setSetMiddleCircle();
 			});
 			
 		</script>
@@ -455,11 +456,10 @@
 			$(window).resize(function(){
    				setTileSize();
 				setNavBar();
+				setSetMiddleCircle();
 			});
 						
         	function setNavBar(){
-				console.log(window.innerHeight);
-				console.log($('.links-to-floor').height());
 				if (window.innerHeight < 7*61) {
 					$('.links-to-floor').css('display', 'none');					
 				} else {
@@ -558,6 +558,19 @@
 				ascensorInstance.scrollToDirection($(this).data("direction"));
 			});
 		</script>
+        
+         <script>
+        	function setSetMiddleCircle(){
+  				var width = $('.centerdesign').width();
+				//if(width<=180){}
+				//else{
+  					$('.centerdesign').css('height', width);
+				//}
+				console.log("width "+$('.centerdesign').width());
+				console.log("height "+$('.centerdesign').height());
+			};
+        </script>
+        
         
         <script>
 		

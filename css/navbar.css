@@ -14,6 +14,10 @@ li a {
 	background-color:#222222;
 	font-size:0.8em;
 	display:block;
+	transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 	
 }
 
