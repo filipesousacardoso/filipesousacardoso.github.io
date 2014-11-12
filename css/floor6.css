@@ -9,21 +9,27 @@
 	-o-transform: translateX(-50%) translateY(-50%);
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
-}
-
-.box{
-	height:50%;
-	width:100%;
+	
 	text-align:center;
 	line-height:0.8;
 	font-weight:bold;
 }
 
-.box h1{
+.contacts h1{
 	font-size:30px;
 }
-.box h2{
+.contacts h2{
 	font-size:45px;
+}
+.contacts h3{
+	font-size:25px;
+}
+.contacts h4{
+	font-size:15px;
+}
+
+.contacts a{
+	display:block;
 }
 
 .social_box{
@@ -124,19 +130,30 @@
 }
 
 .bottomtable{
-	display:table;
+	
 	max-width:400px;
 	min-width:300px;
 	width:100%;
 	
 	position:absolute;
-	bottom:35px;
+	bottom:50px;
 	left:50%;
 	transform:translateX(-50%);
 	-moz-transform:translateX(-50%);
 	-webkit-transform:translateX(-50%);
 	-o-transform:translateX(-50%);
+	display:none;
 	}
+	
+@media only screen and (min-height: 480px) {
+	.bottomtable{
+		display:table;
+	}
+	.contacts a{
+		display:none;
+}
+}
+
 .bottomrow{
 	display:table-row;}
 .bottomcell{	
@@ -146,7 +163,7 @@
 }
 .info{max-width:200px;border-right:1px solid #666;}
 	
-.bottomcell td img{max-width:30px;height:auto;}
+.bottomcell td img{max-width:20px;height:auto;}
 
 .bottomcell table{margin:0 auto;width:100px;}
 .bottomcell td{vertical-align:middle;}
