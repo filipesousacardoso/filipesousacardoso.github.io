@@ -21,7 +21,6 @@ min-width: 1170px
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
 	left:50%;
 	max-width:420px;
-	color:white;
 	
 	transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
@@ -176,6 +175,9 @@ Main components
   display: table;
   clear: both;
 }
+.cd-timeline-content a:hover {
+	color:#247878;
+}
 .cd-timeline-content h2 {
   font-size: 13px;
   font-weight:bold;
@@ -257,7 +259,6 @@ Main components
 	
 	padding:5px 10px;
 	text-align:center;
-	color:white;
 	font-size:9px;
 	border:1px solid white;
 	
@@ -267,4 +268,4 @@ Main components
     -o-transition: all 0.3s ease-in-out;
 }
 
-#cv:hover{background:#00a99d;}
+#cv:hover{background:#00a99d;color:white;}

@@ -9,7 +9,6 @@
 	-o-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 	
-	color: white;
 	width:330px;
 	height:150px;
 	z-index:10;
@@ -63,7 +62,7 @@
 	padding-top:15px;
 	font-size:10px;
 	line-height:1;
-	color:grey;
+	color:#333;
 	display:none;
 }
 

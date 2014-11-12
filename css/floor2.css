@@ -11,8 +11,10 @@
 	-o-transform: translateX(-50%) translateY(-50%);
 }
 
-#info{	
+#info{
+	font-size:13px;
 	text-align:justify;
+	color:#333;
 }
 #info img{
 	width:25%;
