@@ -1,21 +1,23 @@
 .portfolio{
 	width: 100%;
 	max-width:1000px;
-	height:84%;
+	//height:84%;
 	
 	position:relative;
 	left:50%;
-	transform:translateX(-50%);
-	-moz-transform:translateX(-50%);
-	-webkit-transform:translateX(-50%);
-	-o-transform:translateX(-50%);
+	top:50%;
+	transform:translateX(-50%) translateY(-50%);
+	-moz-transform:translateX(-50%) translateY(-50%);
+	-webkit-transform:translateX(-50%) translateY(-50%);
+	-o-transform:translateX(-50%) translateY(-50%);
 	z-index:10;
 }
 
 .portfolio ul{
 	list-style: none;
 	text-align:center;
-	padding:2% 1%;
+	//padding:2% 1%;
+	padding:2% 0%;
 	
 	position:relative;
 	left:50%;
@@ -101,7 +103,7 @@
 .bottomdesign{
 	height:8%;
 	width:60px;
-	position:relative;
+	position:absolute;
 	bottom:0;
 	left:50%;
 	transform:translateX(-50%);
@@ -112,6 +114,26 @@
 	background:#00a99d;
 	border-top-left-radius:50%;
 	border-top-right-radius:50%;	
+}
+
+.backgroundstripesgreen{
+	background-image:url(../img/backgroundportfolio.png);
+	background-position:center top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%; 
+	
+	height:100%;
+	width:100%;
+	
+	position:absolute;
+	top:0;
+	transform:translateY(-35%);
+	-moz-transform:translateY(-35%);
+	-webkit-transform:translateY(-35%);
+	-o-transform:translateY(-35%);
 }
 
 .backgroundstripesb{
@@ -132,7 +154,6 @@
 	-moz-transform:translateY(50%);
 	-webkit-transform:translateY(50%);
 	-o-transform:translateY(50%);
-	opacity:0.9;
 }
 
 @media (orientation:portrait) {
@@ -140,6 +161,6 @@
 	width: 45%;
 }
 .portfolio ul{
-	padding:8% 2%;
+	//padding:8% 2%;
 }
 }
