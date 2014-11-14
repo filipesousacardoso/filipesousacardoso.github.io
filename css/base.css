@@ -107,6 +107,24 @@ a:hover {
 /* ============================================================
   ADD
 ============================================================ */
+.floor-1{background: black;}
+.floor-2{background: white;}
+.floor-3{background: #00a99d;}
+.floor-4{background: #247878;}
+.floor-5{background: white;}
+.floor-6{background:#333;}
+
+.division{
+	position:absolute;
+	bottom:0;
+	height:20px;
+	width:100%;
+	display:none;
+}
+
+@media only screen and (min-height: 240px) {
+.division{display:block;}
+}
 
 #gradient{
 	position:absolute;

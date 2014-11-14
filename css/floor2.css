@@ -35,11 +35,7 @@
 }
 
 @media only screen and (min-height: 510px) {
-
-#socialbox{
-	display:block;
-}
-
+	#socialbox{display:block;}
 }
 
 #socialbox table{
@@ -51,7 +47,7 @@
 }
 
 #socialbox th img{
-	width:99%;
+	width:100%;
 	height:auto;
 	vertical-align:middle;
 	
@@ -61,11 +57,7 @@
     -o-transition: all 0.3s ease-in-out;
 }
 
-#socialbox th img:hover{
-	border-radius:50%;	
-}
-
-
+#socialbox th img:hover{border-radius:50%;}
 
 #init {	
 	position:absolute;
@@ -108,38 +100,30 @@
 }
 
 @media only screen and (min-width: 780px) {
-
-#init {
-	max-width:100%;
-}
-
-#line{
-	left: 50%;
-	transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	overflow:hidden;
-}
-
-#born{
-	position:relative;
-	left: 50%;
-	margin:0;
-	transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-}
+	#init {max-width:100%;}
+	
+	#line{
+		left: 50%;
+		transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		overflow:hidden;
+	}
+	
+	#born{
+		position:relative;
+		left: 50%;
+		margin:0;
+		transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+	}
 }
 
 @media only screen and (min-width: 420px) and (min-height: 540px)  {
-#init {
-	display:block;
-}
-#divisionfloor2{
-	display:block;
-}
-.aboutme{
-	top: 45%;
+	#init {	display:block;}
+	#divisionfloor2{display:block;}
+	.aboutme{top: 45%;}
 }

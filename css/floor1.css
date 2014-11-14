@@ -72,10 +72,7 @@
 }
 
 @media only screen and (min-height: 240px) {
-
-#scroll {
-	display:block;
-}
+	#scroll {display:block;}
 }
 
 #instatiles {
@@ -99,6 +96,8 @@
 	background-size:cover;
 }
 #instagram{
+	height:50px;
+	width:131px;
 	position: absolute;
 	top: 0px;
 	left:50%;
