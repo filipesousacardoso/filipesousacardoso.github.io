@@ -20,38 +20,10 @@
         
         <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 		<script src="js/ascensor.js"></script>
-        <script src="js/modernizr.js"></script>
-        <script type="text/javascript" src="js/instafeed.js"></script>
+        <!--<script src="js/modernizr.js"></script>-->
+        <script src="js/instafeed.js"></script>
 		
         
-        <script>
-			
-			$(window).load(function(){
-   				setTileSize();
-				setNavBar();
-				setSetMiddleCircle();
-			});
-			
-		</script>
-        <script> 
-		$(document).ready(function(){
-  			$(".navCollapsed").click(function(){
-    			if($('.list').css('display')=='none'){
-					$('.links-to-floor').css('top', '50%');
-					$('.links-to-floor').css('transform', 'translateY(-50%)');
-					$('.links-to-floor').css('-o-transform', 'translateY(-50%)');
-					$('.links-to-floor').css('-moz-transform', 'translateY(-50%)');
-					$('.links-to-floor').css('-webkit-transform', 'translateY(-50%)');}
-				else{
-					$('.links-to-floor').css('top', '5px');
-					$('.links-to-floor').css('transform', 'translateY(0)');
-					$('.links-to-floor').css('-o-transform', 'translateY(0)');
-					$('.links-to-floor').css('-moz-transform', 'translateY(0)');
-					$('.links-to-floor').css('-webkit-transform', 'translateY(0)');}
-				$(".list").slideToggle("slow");				
-			});
-		});
-		</script>
         <script type="text/javascript">
     		var feed = new Instafeed({
        			get:'user',
@@ -60,7 +32,23 @@
     		});
     		feed.run();
 		</script>
-        	
+        
+        <script>		
+			$(document).ready(function(){
+				setTileSize();
+				showNavBar();
+				navBarToggle();
+				toBold();	
+			});		
+			$(window).load(function(){
+				setMiddleCircle();
+			});
+			$(window).resize(function(){
+   				setTileSize();
+				showNavBar();
+				setMiddleCircle();
+			});		
+		</script>
 	</head>
 	<body>
     	<div id="ascensorBuilding">
@@ -84,8 +72,8 @@
                         <span class="instacell instacell-9"></span>
                     </div>
                 </div> <!-- instatiles -->
-                
-               <div id="gradient"></div>
+				
+                <div id="gradient"></div>
                 <div id="divisionfloor1" class="division"></div>               
                 
                 <section class="container">
@@ -98,10 +86,10 @@
                         	<h1>FILIPE</br>CARDOSO</h1>
                         	<h2>SOFTWARE DEVELOPER</br>DESIGNER</h2>
                    		</div>
-                    </section>
-                </section> <!--cover --> 
+                    </section><!--cover --> 
+                </section><!--container-->
                 <div id="instagram"><img src="img/instagram.png" alt="Instagram"/></div>       
-			</div><!--container-->
+			</div>
             
             <!-- FLOOR 2 -->
 			<div class="floor-2">
@@ -139,26 +127,37 @@
                             Architecture
                             -->
                             
-                            
-                            
                     	</div><!-- info -->
                         </br>
                         <div id="socialbox">
                         
-                    <table width="100%">
-  					<tr>
-   					<th><a href="http://www.facebook.com/filipe.cardoso" target="_blank">
-                    <img src="img/PNG/128/02_facebook.png" alt="facebook" /></a></th>
-                    <th><a href="#behance" target="_blank"><img src="img/PNG/128/08_behance.png" alt="behance"/></a></th>						
-                    <th><a href="http://pt.linkedin.com/pub/filipe-cardoso/67/182/35/" target="_blank">
-                    <img src="img/PNG/128/07_linkedin.png" alt="linkedin"/></a></th>
-                    <th><a href="http://www.instagram.com/filipesousacardoso" target="_blank">
-                    <img src="img/PNG/128/10_instagram.png" alt="instagram"/></a></th>
-                    <th><a href="http://github.com/filipesousacardoso" target="_blank">
-                    <img src="img/PNG/128/25_github.png" alt="github"/></a></th>
-                    <th><a href="mailto:filipecardoso.88@gmail.com">
-                    <img src="img/PNG/128/26_email.png" alt="email"/></a></th>
-    				</tr>
+                    <table>
+  						<tr>
+   							<th>
+                                <a href="http://www.facebook.com/filipe.cardoso" target="_blank">
+                                <img src="img/PNG/128/02_facebook.png" alt="facebook" /></a>
+                            </th>
+                            <th>
+                                <a href="#behance" target="_blank">
+                                <img src="img/PNG/128/08_behance.png" alt="behance"/></a>
+                            </th>						
+                            <th>
+                                <a href="http://pt.linkedin.com/pub/filipe-cardoso/67/182/35/" target="_blank">
+                                <img src="img/PNG/128/07_linkedin.png" alt="linkedin"/></a>
+                            </th>
+                            <th>
+                                <a href="http://www.instagram.com/filipesousacardoso" target="_blank">
+                                <img src="img/PNG/128/10_instagram.png" alt="instagram"/></a>
+                            </th>
+                            <th>
+                                <a href="http://github.com/filipesousacardoso" target="_blank">
+                                <img src="img/PNG/128/25_github.png" alt="github"/></a>
+                            </th>
+                            <th>
+                                <a href="mailto:filipecardoso.88@gmail.com">
+                                <img src="img/PNG/128/26_email.png" alt="email"/></a>
+                            </th>
+                        </tr>
 					</table> 
                                     
                     	</div>
@@ -169,7 +168,7 @@
             <!-- FLOOR 3 -->
 			<div class="floor-3">
             
-                <section class="skyline"></section>
+                <section id="skyline"></section>
             	<section class="container">          
                 	
                     <!-- TIMELINE -->
@@ -182,15 +181,16 @@
 							<div class="cd-timeline-content">
 								<h2>Call Center Operator</h2>
 								<p>Transactional Banking for Santander Totta and other Marketing Activities</p>
-                                <h3><img src="img/mapsmin.png" alt="Location"/>
-                                <a href="http://www.contactcenter.pt/" target="_blank">
-                                	3C Contact Costumer</a></h3>
+                                <h3>
+                                	<img src="img/mapsmin.png" alt="Location"/>
+                               		<a href="http://www.contactcenter.pt/" target="_blank">
+                                	3C Contact Costumer</a>
+                                </h3>
 								<span class="cd-date">Feb 07 – Jun 07</span>
 							</div>
 						</div>
 
-						<div class="cd-timeline-block">
-                        	<!--<div class="cd-timeline-extend-img"></div>-->							
+						<div class="cd-timeline-block">						
 							<div class="cd-timeline-img">
 								<img src="img/school.png" alt="College"/>
 							</div>
@@ -199,8 +199,11 @@
 								<p>Train highly skilled professionals in the field of Information Systems
                                 and Information Technology aligned with the business needs and objectives
                                  – Information Genius for the Enterprise</p>
-                                <h3><img src="img/mapsmin.png" alt="Location"/>
-                                	<a href="http://iscte-iul.pt/" target="_blank">ISCTE-IUL</a></h3>
+                                <h3>
+                                	<img src="img/mapsmin.png" alt="Location"/>
+                                	<a href="http://iscte-iul.pt/" target="_blank">
+                                    ISCTE-IUL</a>
+                                </h3>
 								<span class="cd-date">Sep 08 – Jul 14</span>
 							</div>
 						</div>
@@ -212,9 +215,11 @@
                             <div class="cd-timeline-content">
 								<h2>Semester Abroad</h2>
 								<p>Erasmus Programme</p>
-                                <h3><img src="img/mapsmin.png" alt="Location"/>
+                                <h3>
+                                	<img src="img/mapsmin.png" alt="Location"/>
                                 	<a href="http://www.uc3m.es/" target="_blank">
-                                    Universidad Carlos III de Madrid</a></h3>
+                                    Universidad Carlos III de Madrid</a>
+                                </h3>
 								<span class="cd-date">Sep 12 - Feb 13</span>
 							</div>
 						</div>
@@ -224,11 +229,14 @@
 								<img src="img/school.png" alt="Coursera"/>
 							</div>
                             <div class="cd-timeline-content">
-								<h2><a href="https://www.coursera.org/course/android" target="_blank">Programming Mobile Applications for Android Handheld Systems</a></h2>
+								<h2><a href="https://www.coursera.org/course/android" target="_blank">Programming Mobile Applications for Android Handheld Systems</a>
+                                </h2>
 								<p>MOOC completed with distinction on Coursera</p>
-                                <h3><img src="img/mapsmin.png" alt="Location"/>
+                                <h3>
+                                	<img src="img/mapsmin.png" alt="Location"/>
                                 	<a href="http://www.umd.edu/" target="_blank">
-                                	University of Maryland</a></h3>
+                                	University of Maryland</a>
+                                </h3>
 								<span class="cd-date">Mar 14</span>
 							</div>
 						</div>
@@ -242,12 +250,13 @@
             
             <!-- FLOOR 4 -->
 			<div class="floor-4">
-            	<div class="divider"></div>
+            	<div id="divider"></div>
                 <section class="container">                    	                      
+                        
                         <div id="table">
-  	    					<div class="row">
-                            
-            					<span class="cell A">
+  	    					<div class="row">                            
+            					
+                                <span class="cell A">
                                		<div id="imgcontainer"><img src="img/code1.png" alt="Code"></div>
                                		<div id="skilllist"><div id="list">
                                     	• HTML
@@ -317,8 +326,9 @@
             <!-- FLOOR 5 -->
 			<div class="floor-5">            	       
                 <section class="container">
-               		<div class="backgroundstripesb"></div>
-                	<div class="topbar"></div>                      
+               		<div class="backgroundstripes" id="backgroundstripesb"></div>
+                	<div id="topbar"></div>
+                    <div id="bottomdesign"></div>                     
                     <div class="portfolio">    
                         <ul>
                             <li>
@@ -365,29 +375,29 @@
                             </li>
                         </ul>
                     </div>                    
-                    <div class="bottomdesign"></div>
+                    
                    
                 </section>
 			</div>
             
             <!-- FLOOR 6 -->
-            <div class="floor-6">  
-            	<div class="grey"></div>           
+            <div class="floor-6">           
             	<section class="container"> 
-                    <div class="backgroundstripest"></div>     		
-                    <div class="centerdesign"></div>
-                    <div class="topdesign"></div>
+                
+                    <div class="backgroundstripes" id="backgroundstripest"></div>
+                    <div id="centerdesign"></div>
+                    <div id="topdesign"></div>
                     
-                	<section class="contacts">
-                			<h1>GET IN</h1></br>
-                    		<h2>TOUCH</h2></br>                			
-                    		<a href="mailto:filipecardoso.88@gmail.com">
-                            	<h3>SEND ME</h3></br>
-                            	<h4>AN EMAIL</h4>
+                    <section class="contacts">
+                            <h1>GET IN</h1></br>
+                            <h2>TOUCH</h2></br>                			
+                            <a href="mailto:filipecardoso.88@gmail.com">
+                                <h3>SEND ME</h3></br>
+                                <h4>AN EMAIL</h4>
                             </a>
-                	</section>
+                    </section>
                     
-                    <div class="bottomtable">
+                    <div id="bottomtable">
                         <div class="bottomrow">                            
             				<span class="bottomcell info">                  
                             Got a project you want me to work on and take a look feel free to drop an email</br>
@@ -431,7 +441,7 @@
                         </div>
                     </div>
                     
-                    <div class="bottombar">© 2014 Filipe Cardoso. All rights reserved</br>Built by Filipe Cardoso</div>
+                    <div id="bottombar">© 2014 Filipe Cardoso. All rights reserved</br>Built by Filipe Cardoso</div>
                     
                 </section>
                 
@@ -455,21 +465,38 @@
         
 		
         
-        <script>
-		
-			$(window).resize(function(){
-   				setTileSize();
-				setNavBar();
-				setSetMiddleCircle();
-			});
-						
-        	function setNavBar(){
-				if (window.innerHeight < 7*61) {
+        <script>	
+			
+			
+			function setMiddleCircle(){
+  				var width = $('#centerdesign').width();
+  				$('#centerdesign').css('height', width);
+			};
+			
+			function navBarToggle(){
+			$(".navCollapsed").click(function(){
+    			if($('.list').css('display')=='none'){
+					$('.links-to-floor').css('top', '50%');
+					$('.links-to-floor').css('transform', 'translateY(-50%)');
+					$('.links-to-floor').css('-o-transform', 'translateY(-50%)');
+					$('.links-to-floor').css('-moz-transform', 'translateY(-50%)');
+					$('.links-to-floor').css('-webkit-transform', 'translateY(-50%)');}
+				else{
+					$('.links-to-floor').css('top', '5px');
+					$('.links-to-floor').css('transform', 'translateY(0)');
+					$('.links-to-floor').css('-o-transform', 'translateY(0)');
+					$('.links-to-floor').css('-moz-transform', 'translateY(0)');
+					$('.links-to-floor').css('-webkit-transform', 'translateY(0)');}
+				$(".list").slideToggle("slow");				
+		})};
+								
+        	function showNavBar(){
+				if (window.innerHeight < 7*62) {
 					$('.links-to-floor').css('display', 'none');					
 				} else {
 					$('.links-to-floor').css('display', 'block');
 				}
-			}
+			};
 						
 			function setTileSize(){
 				$('.instacell-1').css('width', 'auto');
@@ -540,10 +567,28 @@
 					$('.instacell-8').css('width', (window.innerHeight/3)+'px');
 				}
 			}
+			};
+			
+			var ran = false;
+		var weights = ['normal', 'bolder'];
+
+		function choose(array) {
+    		return array[Math.floor(Math.random() * array.length)];
+		};
+
+		function toBold() {
+    		if(ran) {
+       		 	return;
+    		}else{
+        		ran = true;
+    		}
+    		var outputs = document.getElementsByClassName('output');
+    		for(var i = 0,l = outputs.length; i < l; i++) {
+        		var output = outputs[i];
+        		output.style.fontWeight = choose(weights);
 			}
-		</script>
-        
-        <script>
+		};
+		
 			var ascensor = $('#ascensorBuilding').ascensor({direction:"y"});
 			var ascensorInstance = $('#ascensorBuilding').data('ascensor');
 							
@@ -561,48 +606,6 @@
 			$(".direction").click(function() {
 				ascensorInstance.scrollToDirection($(this).data("direction"));
 			});
-		</script>
-        
-         <script>
-        	function setSetMiddleCircle(){
-  				var width = $('.centerdesign').width();
-				//if(width<=180){}
-				//else{
-  					$('.centerdesign').css('height', width);
-				//}
-				console.log("width "+$('.centerdesign').width());
-				console.log("height "+$('.centerdesign').height());
-			};
-        </script>
-        
-        
-        <script>
-		
-		window.addEventListener('load', run, false);
-		document.addEventListener('DOMContentLoaded', run, false);
-
-		var ran = false;
-		var weights = ['normal', 'bolder'];
-
-		function choose(array) {
-    	return array[Math.floor(Math.random() * array.length)];
-			}
-
-		function run() {
-    		if(ran) {
-       		 	return;
-    		}else{
-        		ran = true;
-    		}
-    		var outputs = document.getElementsByClassName('output');
-    		for(var i = 0,l = outputs.length; i < l; i++) {
-        		var output = outputs[i];
-        		output.style.fontWeight = choose(weights);
-			}
-		}
-		
-		</script>
-       <!-- <script src="js/toucheffects.js"></script>-->
-        
+		</script>       
 	</body>
 </html>

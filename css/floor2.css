@@ -43,6 +43,7 @@
 }
 
 #socialbox table{
+	width:100%;
 	border-spacing:10px;
 	border-collapse:separate;
 	border-bottom:1px solid gray;
