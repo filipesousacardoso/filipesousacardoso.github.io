@@ -42,11 +42,13 @@
 			});		
 			$(window).load(function(){
 				setMiddleCircle();
+                setPaddingTimeline();
 			});
 			$(window).resize(function(){
    				setTileSize();
 				showNavBar();
 				setMiddleCircle();
+                setPaddingTimeline();
 			});		
 		</script>
 	</head>
@@ -328,7 +330,9 @@
                 <section class="container">
                		<div class="backgroundstripes" id="backgroundstripesb"></div>
                 	<div id="topbar"></div>
-                    <div id="bottomdesign"></div>                     
+                    <div class="bottomdesign" id="shadowbottomdesign"></div> 
+                    <div class="bottomdesign"></div>
+                    
                     <div class="portfolio">    
                         <ul>
                             <li>
@@ -385,7 +389,10 @@
             	<section class="container"> 
                 
                     <div class="backgroundstripes" id="backgroundstripest"></div>
-                    <div id="centerdesign"></div>
+                    
+                    <div class="centerdesign" id="shadowcenterdesign"></div>                    
+                    <div class="centerdesign" id="centerdesign"></div>
+                    
                     <div id="topdesign"></div>
                     
                     <section class="contacts">
@@ -467,10 +474,17 @@
         
         <script>	
 			
-			
+			function setPaddingTimeline(){
+  				var difference = window.innerHeight-($('.cd-container').height());
+                var paddingbottom = $('#cd-timeline').css('padding-bottom');
+                paddingbottom.replace('px','');
+                var paddingbottomnumber=parseInt(paddingbottom);
+  				$('#cd-timeline').css('padding-top', (difference/2)-paddingbottomnumber-10);
+			};
+            
 			function setMiddleCircle(){
   				var width = $('#centerdesign').width();
-  				$('#centerdesign').css('height', width);
+  				$('.centerdesign').css('height', width);
 			};
 			
 			function navBarToggle(){

@@ -90,7 +90,7 @@
 	background:#00a99d;
 }
 
-#bottomdesign{
+.bottomdesign{
 	width:15%;
 	min-width:50px;
 	max-width:70px;
@@ -108,6 +108,7 @@
 	-webkit-transform:translateX(-50%);
 	-o-transform:translateX(-50%);	
 }
+#shadowbottomdesign{bottom:1%;background:#247878;}
 
 .backgroundstripes{
 	background-image:url(../img/backgroundcontacts.png);
