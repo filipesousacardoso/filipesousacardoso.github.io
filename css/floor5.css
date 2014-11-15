@@ -108,7 +108,7 @@
 	-webkit-transform:translateX(-50%);
 	-o-transform:translateX(-50%);	
 }
-#shadowbottomdesign{bottom:1%;background:#247878;}
+#shadowbottomdesign{bottom:0.5%;background:#247878;}
 
 .backgroundstripes{
 	background-image:url(../img/backgroundcontacts.png);
