@@ -39,10 +39,10 @@ min-width: 1170px
   	border-radius: 50%;
  	border:8px solid white;
 	
-	transform:translateX(25%) translateY(80%);
-	-moz-transform:translateX(25%) translateY(80%);
-	-webkit-transform:translateX(25%) translateY(80%);
-	-o-transform:translateX(25%) translateY(80%);
+	transform:translateX(25%) translateY(225%);
+	-moz-transform:translateX(25%) translateY(225%);
+	-webkit-transform:translateX(25%) translateY(225%);
+	-o-transform:translateX(25%) translateY(225%);
 }
 
 @media only screen and (min-width: 780px) {
@@ -54,10 +54,10 @@ min-width: 1170px
 	position:absolute;
   	left:50%;
 	
-	transform:translateX(-50%) translateY(220%);
-	-moz-transform:translateX(-50%) translateY(220%);
-	-webkit-transform:translateX(-50%) translateY(220%);
-	-o-transform:translateX(-50%) translateY(220%);
+	transform:translateX(-50%) translateY(125%);
+	-moz-transform:translateX(-50%) translateY(125%);
+	-webkit-transform:translateX(-50%) translateY(125%);
+	-o-transform:translateX(-50%) translateY(125%);
 }
 }
 
@@ -69,7 +69,8 @@ Main components
 -------------------------------- */
 #cd-timeline {
 	position: relative; 
-	padding-top: 3em;
+	padding-top:20px;
+    padding-bottom:40px;
 }
 
 #cd-timeline::before {
@@ -86,8 +87,7 @@ Main components
 @media only screen and (min-width: 780px) {
 	
 #cd-timeline {
-  	position: relative; 
-  	padding: 5em 0;
+  	position: relative;
 }
 
 #cd-timeline::before {
@@ -146,9 +146,6 @@ Main components
 	-webkit-transform:translateX(-50%) translateY(-50%);
 	-o-transform:translateX(-50%) translateY(-50%);
 }
-
-/*.cd-timeline-img:hover{
-	border:2px solid #00a99d;}*/
 
 @media only screen and (min-width: 780px) {
   .cd-timeline-img {
@@ -256,6 +253,7 @@ Main components
 	text-align:center;
 	font-size:9px;
 	border:1px solid white;
+    background:#247878;
 	
 	transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;

@@ -33,24 +33,23 @@
 	-webkit-transform:translateX(-50%);
 	-o-transform:translateX(-50%);	
 }
-
-#centerdesign{	
-	width:30%;
+.centerdesign{
+    width:30%;
 	height:auto;
 	min-width:180px;
 	max-width:250px;
-	background:#00a99d;
 	border-radius:50%;
-	border-top:3px solid #247878;
-	
-	position:absolute;
+    position:absolute;
 	top:40%;
 	left:50%;
-	transform:translateX(-50%) translateY(-50%);
+    transform:translateX(-50%) translateY(-50%);
 	-moz-transform:translateX(-50%) translateY(-50%);
 	-webkit-transform:translateX(-50%) translateY(-50%);
 	-o-transform:translateX(-50%) translateY(-50%);
 }
+
+#centerdesign{background:#00a99d;}
+#shadowcenterdesign{background:#247878;top:39%;}
 
 #backgroundstripest{
 	position:absolute;
