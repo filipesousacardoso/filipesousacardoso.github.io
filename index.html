@@ -42,22 +42,14 @@
 			});		
 			$(window).load(function(){
 				setMiddleCircle();
-<<<<<<< HEAD
 				setTileSize();
 				//setPaddingTimeline();
-=======
-                setPaddingTimeline();
->>>>>>> origin/master
 			});
 			$(window).resize(function(){
    				setTileSize();
 				showNavBar();
 				setMiddleCircle();
-<<<<<<< HEAD
 				//setPaddingTimeline();
-=======
-                setPaddingTimeline();
->>>>>>> origin/master
 			});		
 		</script>
 	</head>
@@ -482,8 +474,6 @@
 		
         
         <script>	
-			
-<<<<<<< HEAD
 			function setPaddingTimeline(){				
                 var height = $('.cd-container').height();
                 var paddingbottom = $('#cd-timeline').css('padding-bottom');
@@ -503,16 +493,6 @@
                 $('.cd-timeline-block').css('height', pad);
             };
 			
-=======
-			function setPaddingTimeline(){
-  				var difference = window.innerHeight-($('.cd-container').height());
-                var paddingbottom = $('#cd-timeline').css('padding-bottom');
-                paddingbottom.replace('px','');
-                var paddingbottomnumber=parseInt(paddingbottom);
-  				$('#cd-timeline').css('padding-top', (difference/2)-paddingbottomnumber-10);
-			};
-            
->>>>>>> origin/master
 			function setMiddleCircle(){
   				var width = $('#centerdesign').width();
   				$('.centerdesign').css('height', width);
