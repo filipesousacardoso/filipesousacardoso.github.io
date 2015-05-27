@@ -8,6 +8,7 @@
 	-moz-transform:translateX(-50%);
 	-webkit-transform:translateX(-50%);
 	-o-transform:translateX(-50%);
+	-webkit-transform: translateZ(0);
 }
 
 .portfolio ul{
@@ -21,6 +22,7 @@
 	-moz-transform:translateX(-50%);
 	-webkit-transform:translateX(-50%);
 	-o-transform:translateX(-50%);
+	-webkit-transform: translateZ(0);
 }
 
 .portfolio li{
@@ -37,7 +39,7 @@
 	background:black;
 	position:absolute;
 	z-index:10;
-	opacity:0.2;
+	opacity:0.3;
 	
 	transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -69,7 +71,8 @@
 	-moz-transform:translateY(95%);
 	-webkit-transform:translateY(95%);
 	-o-transform:translateY(95%);
-	
+	-webkit-transform: translateZ(0);
+
 	transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -81,8 +84,12 @@
 	-moz-transform:translateY(0);
 	-webkit-transform:translateY(0);
 	-o-transform:translateY(0);
+	-webkit-transform: translateZ(0);
 }
-.portfolio li:hover .darkened{opacity:0;}
+
+.portfolio li:hover .darkened{
+	opacity:0;
+}
 
 #topbar{
 	height:8%;
@@ -106,9 +113,14 @@
 	transform:translateX(-50%);
 	-moz-transform:translateX(-50%);
 	-webkit-transform:translateX(-50%);
-	-o-transform:translateX(-50%);	
+	-o-transform:translateX(-50%);
+	-webkit-transform: translateZ(0);
 }
-#shadowbottomdesign{bottom:0.5%;background:#247878;}
+
+#shadowbottomdesign{
+	bottom:0.5%;
+	background:#247878;
+}
 
 .backgroundstripes{
 	background-image:url(../img/backgroundcontacts.png);
@@ -129,6 +141,7 @@
 	-moz-transform:translateY(50%);
 	-webkit-transform:translateY(50%);
 	-o-transform:translateY(50%);
+	-webkit-transform: translateZ(0);
 }
 
 @media (orientation:portrait) {

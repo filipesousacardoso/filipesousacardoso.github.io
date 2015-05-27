@@ -35,7 +35,7 @@
         
         <script>		
 			$(document).ready(function(){
-				setTileSize();
+				//setTileSize();
 				showNavBar();
 				navBarToggle();
 				toBold();	
@@ -43,13 +43,11 @@
 			$(window).load(function(){
 				setMiddleCircle();
 				setTileSize();
-				//setPaddingTimeline();
 			});
 			$(window).resize(function(){
    				setTileSize();
 				showNavBar();
 				setMiddleCircle();
-				//setPaddingTimeline();
 			});		
 		</script>
 	</head>
@@ -488,25 +486,7 @@ better.</p>
 		
         
         <script>	
-			function setPaddingTimeline(){				
-                var height = $('.cd-container').height();
-                var paddingbottom = $('#cd-timeline').css('padding-bottom');
-				console.log(height);
-				console.log(paddingbottom);
 				
-                paddingbottom.replace('px','');
-                var paddingbottomnumber=parseInt(paddingbottom);
-				console.log(paddingbottomnumber);
-				
-				var numberofblocks=document.getElementsByClassName('cd-timeline-block').length;
-				console.log(numberofblocks);
-				
-				var pad=(height-paddingbottomnumber)/(numberofblocks);
-				console.log(pad);
-				
-                $('.cd-timeline-block').css('height', pad);
-            };
-			
 			function setMiddleCircle(){
   				var width = $('#centerdesign').width();
   				$('.centerdesign').css('height', width);
