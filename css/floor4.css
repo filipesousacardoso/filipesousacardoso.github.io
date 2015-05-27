@@ -71,24 +71,28 @@
 	-o-transform: translateX(100%);
 	-webkit-transform: translateX(100%);
 	transform: translateX(100%);
+	-webkit-transform: translateZ(0);
 }
 .B:hover #imgcontainer, .B:hover #skilllist{
 	-moz-transform: translateY(100%);
 	-o-transform: translateY(100%);
 	-webkit-transform: translateY(100%);
 	transform: translateY(100%);
+	-webkit-transform: translateZ(0);
 }
 .C:hover #imgcontainer,.C:hover #skilllist{
 	-moz-transform:translateY(-100%);
 	-o-transform:translateY(-100%);
 	-webkit-transform:translateY(-100%);
 	transform:translateY(-100%);
+	-webkit-transform: translateZ(0);
 }
 .D:hover #imgcontainer,.D:hover #skilllist{
 	-moz-transform: translateX(-100%);
 	-o-transform: translateX(-100%);
 	-webkit-transform: translateX(-100%);
 	transform: translateX(-100%);
+	-webkit-transform: translateZ(0);
 }
 
 .backlettering{
