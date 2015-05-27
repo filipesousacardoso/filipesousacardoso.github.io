@@ -120,18 +120,18 @@
 */
 @-webkit-keyframes bounce {
     30%, 50%, 70% {-webkit-transform: translateY(0) translateX(-50%);}
-    20% {-webkit-transform: translateY(-15px) translateX(-50%);}
-    40% {-webkit-transform: translateY(-15px) translateX(-50%);}
-    60% {-webkit-transform: translateY(-15px) translateX(-50%);}
-    80% {-webkit-transform: translateY(-15px) translateX(-50%);}
+    20% {-webkit-transform: translateY(-10px) translateX(-50%);}
+    40% {-webkit-transform: translateY(-10px) translateX(-50%);}
+    60% {-webkit-transform: translateY(-10px) translateX(-50%);}
+    80% {-webkit-transform: translateY(-10px) translateX(-50%);}
 }
  
 @keyframes bounce {
     30%, 50%, 70% {transform: translateY(0) translateX(-50%);}
-    20% {transform: translateY(-15px) translateX(-50%);}
-    40% {transform: translateY(-15px) translateX(-50%);}
-    60% {transform: translateY(-15px) translateX(-50%);}
-    80% {transform: translateY(-15px) translateX(-50%);}
+    20% {transform: translateY(-10px) translateX(-50%);}
+    40% {transform: translateY(-10px) translateX(-50%);}
+    60% {transform: translateY(-10px) translateX(-50%);}
+    80% {transform: translateY(-10px) translateX(-50%);}
 }
  
 /*
