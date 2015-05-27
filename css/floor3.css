@@ -144,7 +144,7 @@ Main components
 
 @media only screen and (min-width: 780px) {
   .cd-timeline-img {
-    left: 50%;
+    left: 49%;
 	
 	transform:translateX(-50%);
 	-moz-transform:translateX(-50%);
