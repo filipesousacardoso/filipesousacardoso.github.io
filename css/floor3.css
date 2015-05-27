@@ -130,11 +130,11 @@ Main components
 
 .cd-timeline-img img {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   position: relative;
-  left: 49%;
-  top: 49%;
+  left: 50%;
+  top: 50%;
   
   transform:translateX(-50%) translateY(-50%);
 	-moz-transform:translateX(-50%) translateY(-50%);
