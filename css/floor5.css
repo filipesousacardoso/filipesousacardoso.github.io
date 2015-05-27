@@ -8,7 +8,6 @@
 	-moz-transform:translateX(-50%);
 	-webkit-transform:translateX(-50%);
 	-o-transform:translateX(-50%);
-	-webkit-transform: translateZ(0);
 }
 
 .portfolio ul{
@@ -22,7 +21,6 @@
 	-moz-transform:translateX(-50%);
 	-webkit-transform:translateX(-50%);
 	-o-transform:translateX(-50%);
-	-webkit-transform: translateZ(0);
 }
 
 .portfolio li{
@@ -114,7 +112,6 @@
 	-moz-transform:translateX(-50%);
 	-webkit-transform:translateX(-50%);
 	-o-transform:translateX(-50%);
-	-webkit-transform: translateZ(0);
 }
 
 #shadowbottomdesign{
@@ -141,7 +138,6 @@
 	-moz-transform:translateY(50%);
 	-webkit-transform:translateY(50%);
 	-o-transform:translateY(50%);
-	-webkit-transform: translateZ(0);
 }
 
 @media (orientation:portrait) {
