@@ -69,6 +69,7 @@
 	-moz-transform:translateY(95%);
 	-webkit-transform:translateY(95%);
 	-o-transform:translateY(95%);
+	-webkit-transform: translateZ(0);
 
 	transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -81,7 +82,6 @@
 	-moz-transform:translateY(0);
 	-webkit-transform:translateY(0);
 	-o-transform:translateY(0);
-	-webkit-transform: translateZ(0);
 }
 
 .portfolio li:hover .darkened{
