@@ -119,7 +119,7 @@
  * Animation for webkit
 */
 @-webkit-keyframes bounce {
-    20%, 4%, 60%, 80% {-webkit-transform: translateY(0) translateX(-50%);}
+    20%, 40%, 60%, 80% {-webkit-transform: translateY(0) translateX(-50%);}
     10% {-webkit-transform: translateY(-15px) translateX(-50%);}
     30% {-webkit-transform: translateY(-15px) translateX(-50%);}
     50% {-webkit-transform: translateY(-15px) translateX(-50%);}
@@ -128,7 +128,7 @@
 }
  
 @keyframes bounce {
-      20%, 4%, 60%, 80% {transform: translateY(0) translateX(-50%);}
+      20%, 40%, 60%, 80% {transform: translateY(0) translateX(-50%);}
     10% {transform: translateY(-15px) translateX(-50%);}
     30% {transform: translateY(-15px) translateX(-50%);}
     50% {transform: translateY(-15px) translateX(-50%);}
