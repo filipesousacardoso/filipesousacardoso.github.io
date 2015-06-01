@@ -1,6 +1,7 @@
 .portfolio{
 	width: 100%;
 	max-width:1000px;
+	max-height: 80%;
 	
 	position:relative;
 	left:50%;
