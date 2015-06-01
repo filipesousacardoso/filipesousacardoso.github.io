@@ -1,7 +1,6 @@
 .portfolio{
 	width: 100%;
 	max-width:1000px;
-	max-height: 80%;
 	
 	position:relative;
 	left:50%;
@@ -143,4 +142,8 @@
 @media (orientation:portrait) {
 .portfolio li{width: 45%;}
 .portfolio ul{padding:8% 2%;}
+}
+
+@media screen and (min-aspect-ratio: 5/5) { 
+.portfolio li{width: 100%;}
 }
