@@ -191,7 +191,7 @@ Main components
   float: left;
 }
 
-@media only screen and (min-width: 420px) and (min-height: 640px)  {
+@media only screen and (min-width: 420px) and (min-height: 670px)  {
   .cd-timeline-content p{
     display:block;
   }
