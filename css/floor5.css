@@ -139,11 +139,12 @@
 	-o-transform:translateY(50%);
 }
 
-@media (orientation:portrait) {
+/*@media (orientation:portrait) {
 .portfolio li{width: 45%;}
 .portfolio ul{padding:8% 2%;}
-}
+}*/
 
-@media screen and (max-aspect-ratio: 5/7) { 
-.portfolio li{width: 100%;}
+@media screen and (max-aspect-ratio: 6/7) { 
+.portfolio li{width: 45%;}
+.portfolio ul{padding:8% 2%;}
 }
