@@ -21,17 +21,7 @@
 	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 	<script src="js/ascensor.js"></script>
 	<!--<script src="js/modernizr.js"></script>-->
-	<script src="js/instafeed.js"></script>
-
-
-	<script type="text/javascript">
-		var feed = new Instafeed({
-			get:'user',
-			userId: 537633012,
-			accessToken: '537633012.5a923d1.3c5b5e8b6ab64a67882b422fa2a75442'
-		});
-		feed.run();
-	</script>
+	<script src="js/instafeed.js"></script>	
 
 	<script>		
 		$(document).ready(function(){
@@ -44,6 +34,15 @@
 			setTileSize();
 			setMiddleCircle();
 		});	
+	</script>
+
+	<script type="text/javascript">
+		var feed = new Instafeed({
+			get:'user',
+			userId: 537633012,
+			accessToken: '537633012.5a923d1.3c5b5e8b6ab64a67882b422fa2a75442'
+		});
+		feed.run();
 	</script>
 
 </head>
