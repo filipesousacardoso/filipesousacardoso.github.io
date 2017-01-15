@@ -64,3 +64,7 @@ li a:hover{
 	color: white;
 	background:#4452a4;
 }
+
+.navButton{
+	cursor: pointer;
+}

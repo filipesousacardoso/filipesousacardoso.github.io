@@ -11,8 +11,7 @@
         sortBy: 'most-recent',
         links: false,
         mock: false,
-        useHttp: false,
-		//limit:20
+        useHttp: false
       };
       if (typeof params === 'object') {
         for (option in params) {
@@ -120,7 +119,7 @@
 			}
 			_k++;		  
 		  }
-	  while(count<9 && _k<= images.length);
+	  while(count<15 && _k<= images.length);
 	  
 	 /*for (_k = 0, _len2 = images.length; _k < _len2; _k++) {
 	  	image = images[_k];

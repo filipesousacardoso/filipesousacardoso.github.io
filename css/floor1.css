@@ -1,54 +1,52 @@
 .cover{
-	display:table;
 	position:absolute;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	-o-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-40%);
+	-webkit-transform: translateX(-50%) translateY(-40%);
+	-o-transform: translateX(-50%) translateY(-40%);
+	transform: translateX(-50%) translateY(-40%);
 	
-	width:330px;
-	height:150px;
 	z-index:10;
+	height: 40%;
 	
 }
 
 .logo{
-	display:table-cell;
-	height:150px;
-	float:left;
-	width:130px;
+	height:100%;
+	max-height: 500px; 
+	text-align: center;
 }
 
 .logo img{
-	max-width:100%;
-	height:auto;
+	max-height:100%;
+	width:auto;
 }
 
 .name{
-	display:table-cell;
-	width:200px;
-	float:right;
-	padding:10px 0;
+	width:100%;
+	text-align: center;
 }
 
 .name h1{
-	font-size: 46px;
-	font-family:"Courier New", Courier, monospace;
-	line-height:0.8;
+	font-size: 30px;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 .name h2{
-	font-size: 12px;
-	font-family:Tahoma, Geneva, sans-serif;
-	padding-left:5px;
+	font-size: 52px;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
-#scroll{
+.name h3{
+	font-size: 14px;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	line-height:1;
+}
+.scroll{
 	position:absolute;
-	bottom:-70px;
+	bottom:-90px;
 	left:50%;
 	transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
@@ -59,11 +57,31 @@
 	background:white;
 	border-radius:100%;
 	text-align:center;
-	padding-top:15px;
+	padding-top:12px;
 	font-size:10px;
 	line-height:1;
 	color:#333;
 	display:none;
+	cursor: pointer;
+	
+	transition: transform 0.3s ease-in-out;
+    -moz-transition: -moz-transform 0.3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: -o-transform 0.3s ease-in-out;
+
+   /* -webkit-animation-name: bounce;
+    animation-name: bounce;*/
+}
+
+.scroll:hover{
+	transform: translateY(-10px) translateX(-50%);
+	-moz-transform: translateY(-10px) translateX(-50%);
+	-webkit-transform: translateY(-10px) translateX(-50%);
+	-o-transform: translateY(-10px) translateX(-50%);
+}
+
+.scroll a{
+	color: #666;
 }
 
 #divisionfloor1{
@@ -72,39 +90,59 @@
 }
 
 @media only screen and (min-height: 240px) {
-	#scroll {display:block;}
+	.scroll {display:block;}
 }
 
 #instatiles {
 	position:absolute;
 	top:0;
-	display: table;
+	display: inline-block;
 	height:100%;
 	width:100%;
+	padding: 1%;
+  font-size: 0;
+  overflow:hidden;
 }
+
 .instarow {
 	display: table-row;
 }
-.instacell {
-	display: table-cell;
+.instacell {	
+	display:inline-block;
+	width: 100%;
+	height: 100%;
 	background-position: 0 0;
-	background-repeat: no-repeat;
-	
+	background-repeat: no-repeat;	
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size:cover;
+	/*border-radius: 10px;*/
 }
+
+.instacell_container {	
+	display:inline-block;
+	width: 33.33333333333333%;
+	padding: 1%;
+}
+
 #instagram{
-	height:50px;
+	height:5%;
 	width:131px;
 	position: absolute;
-	top: 0px;
+	top: 4%;
 	left:50%;
+	text-align: center;
 	-moz-transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
+}
+
+#instagram img{
+	height: 100%;
+	width: auto;
+	opacity: 0.7;
 }
 
 .animated {
@@ -120,26 +158,12 @@
 */
 @-webkit-keyframes bounce {
     30%, 50%, 70% {-webkit-transform: translateY(0) translateX(-50%);}
-    20% {-webkit-transform: translateY(-10px) translateX(-50%);}
-    40% {-webkit-transform: translateY(-10px) translateX(-50%);}
-    60% {-webkit-transform: translateY(-10px) translateX(-50%);}
-    80% {-webkit-transform: translateY(-10px) translateX(-50%);}
+    20%, 40%, 60%, 80% {-webkit-transform: translateY(-10px) translateX(-50%);}
 }
  
 @keyframes bounce {
     30%, 50%, 70% {transform: translateY(0) translateX(-50%);}
-    20% {transform: translateY(-10px) translateX(-50%);}
-    40% {transform: translateY(-10px) translateX(-50%);}
-    60% {transform: translateY(-10px) translateX(-50%);}
-    80% {transform: translateY(-10px) translateX(-50%);}
-}
- 
-/*
- * Adding the animation to our element
-*/
-.bounce {
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
+    20%, 40%, 60%, 80% {transform: translateY(-10px) translateX(-50%);}
 }
 
 
